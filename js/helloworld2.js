@@ -1,1 +1,1 @@
-document.body.innerHTML = "\"Hello Refocus !!\"";
+document.body.innerHTML = "Hello Refocus !!";
