@@ -1,5 +1,4 @@
-console.log("helloworld!");
-document.body.innerHTML = "Hello World !!";
+Home Assignment: Write your First Code
 
 Know your Aptitude 
 Recognize Patterns of Failure
@@ -7,9 +6,9 @@ Optimise your Operation
 Paractice and Patience
 Go Beyond Good Enough
 
+console.log("helloworld!");
+document.body.innerHTML = "Hello World !!";
 
-
-Home Assignment: Write your First Code
 
 console.log("\"Hello Refocus !!\"");
 console.log("~");
