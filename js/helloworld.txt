@@ -1,2 +1,39 @@
 console.log("helloworld!");
 document.body.innerHTML = "Hello World !!";
+
+Know your Aptitude 
+Recognize Patterns of Failure
+Optimise your Operation
+Paractice and Patience
+Go Beyond Good Enough
+
+
+
+Home Assignment: Write your First Code
+
+console.log("\"Hello Refocus !!\"");
+console.log("~");
+console.log("\"I am gonna be an awesome web developer.\"");
+console.log("~");
+console.log("\"PLAY to your STRENGHTS!\"");
+console.log("~");
+console.log("\u25CF Know your Aptitude");
+console.log("\u25CF Recognize Patterns of Failure");
+console.log("\u25CF Optimise your Operation");
+console.log("\u25CF Practice and Patience");
+console.log("\u25CF Go Beyond Good Enough");
+console.log("~");
+
+
+document.body.innerHTML = "\"Hello Refocus !!\"";
+document.body.innerHTML = "~";
+document.body.innerHTML = "\"I am gonna be an awesome web developer.\"";
+document.body.innerHTML = "~";
+document.body.innerHTML = "\"PLAY to your STRENGHTS!\"";
+document.body.innerHTML = "~";
+document.body.innerHTML = "\u25CF Know your Aptitude";
+document.body.innerHTML = "\u25CF Recognize Patterns of Failure";
+document.body.innerHTML = "\u25CF Optimise your Operation";
+document.body.innerHTML = "\u25CF Practice and Patience";
+document.body.innerHTML = "\u25CF Go Beyond Good Enough";
+document.body.innerHTML = "~";
