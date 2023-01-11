@@ -1,3 +1,8 @@
+console.log("helloworld!");
+document.body.innerHTML = "Hello World !!";
+
+Home Assignment: Write your First Code
+
 console.log("\"Hello Refocus !!\"");
 console.log("~");
 console.log("\"I am gonna be an awesome web developer.\"");
