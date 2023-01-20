@@ -2,6 +2,13 @@
 <html>
 <head>    
     <!-- <title></title> type="test/css" width:12em;color: padding:0.2em;-->
+        <script>
+            function show(shown, hidden) {
+                document.getElementById(shown).style.display = 'block';
+                document.getElementById(hidden).style.display = 'none';
+                return false;
+            }
+        </script>
     <center>
     <link rel="stylesheet"  href="css/style.css"/>
                 
@@ -27,9 +34,27 @@
             </figure>
         </a>
     </article>
+<hr style="width:100%;text-align:left;margin-left:0">
+        <p style="color:green; font-size:160%;"><b><u>JAVASCRIPT BASICS - Live Session 0</u> - <i>January 12, 2023</i></b></p>    
+<hr style="width:100%;text-align:left;margin-left:0">
     <div>
-        <p style="color:green; font-size:160%;"><b><u>JAVASCRIPT BASICS - Live Session 0</u> - <i>January 12, 2023</i></b></p>
         <h1><a href="helloworld.html"title=helloworld>"<strong>Home Assignment: Write your First Code </strong>"</a></h1>
+
+    <div id="Page1">
+        Home Assignment: Write your First Code:
+        <a href="#" onclick="return show('Page2','Page1');"><b>Show</b></a>
+    </div>
+    
+    <div id="Page2" style="display:none">
+        Home Assignment: Write your First Code:
+        <a href="#" onclick="return show('Page1','Page2');"><b>Hide</b></a><br><br><br>
+        <script src="js/helloworld.js"></script>
+    </div>
+<hr style="width:100%;text-align:left;margin-left:0">
+
+
+
+
         <p style="color:red; font-size:100%;"><b><u>JAVASCRIPT BASICS - Live Session 1</u> - <i> , 2023</i></b></p>
     <div>
 </main>
