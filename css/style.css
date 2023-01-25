@@ -29,6 +29,14 @@ div.GeneratedText {
     margin: 0px;
 }
 
+div.container1280x1280 {
+    width: 1280x;
+    /* height: 1280x; */
+    border: 0px solid gray;
+    margin: 0 auto;
+    text-align: center;
+}
+
 div.container1000x750 {
       width: 1000px;
       height: 750px;
