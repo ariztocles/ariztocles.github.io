@@ -20,7 +20,52 @@ h6 {
     color: red;
 }
 
-.container {
-    text-align: center;
+div.GeneratedText {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 4em;
+    letter-spacing: 0.2em;
+    line-height: 1em #330099;
+    background-color: #7fccff;
+    margin: 0px;
 }
 
+div.container1000x750 {
+      width: 1000px;
+      height: 750px;
+      border: 1px solid gray;
+      margin: 0 auto;
+      text-align: center;    
+}
+
+div.container300x300 {
+      width: 300px;
+      height: 300px;
+      border: 0px solid; 
+      margin: 0 auto;
+      text-align: left;  
+}           
+
+div.container1000x1000 {
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid gray;
+    margin: 0 auto;
+    text-align: left;
+}
+
+div.container250x320 {
+    width: 250px;
+    height: 320px;
+    border: 0px solid; 
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 30px;
+}
+
+div.container300x250 {
+        width: 300px;
+        height: 250px;
+        border: 0px solid;
+        margin: 0 auto;
+        text-align: center;
+}
