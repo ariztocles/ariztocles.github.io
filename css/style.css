@@ -1,9 +1,15 @@
+body{
+    background-color:cornflowerblue
+}
+
 h1 {
     color: black;
 }
+
 h2 {
     color: green;
 }
+
 h3{
     color:tomato;
 }
@@ -20,21 +26,47 @@ h6 {
     color: red;
 }
 
+hr.hr1080 {
+    height: 10px;
+    width: 1080;
+    background-color: lightgrey;
+     border: 1px solid lightgrey;
+    /*border-radius: 1px;*/
+} 
+
+div.tomato {
+    color: tomato; 
+    display: inline 
+}
+
+div.skyblue {
+    color: skyblue; 
+    display: inline 
+}
+
+div.center {    
+    top: 50%;     
+    position:relative;       
+    justify-content: center;
+    transform: translateY(-50%);
+}
+
 div.GeneratedText {
     font-family: 'Arial Black', sans-serif;
     font-size: 4em;
-    letter-spacing: 0.2em;
-    line-height: 1em #330099;
-    background-color: #7fccff;
+    letter-spacing: 0.2em;    
+    /* background-color: #7fccff; blanchedalmond; */  
     margin: 0px;
+    text-align: center;
 }
 
-div.container1280x1280 {
-    width: 1280x;
-    /* height: 1280x; */
-    border: 0px solid gray;
+div.container1080x1080 {
+    width: 1080px;
+    /* height: 1080px; */
+    border: 0px solid red;
     margin: 0 auto;
-    text-align: center;
+    text-align: center;   
+    background-color: white
 }
 
 div.container1000x750 {
@@ -42,16 +74,9 @@ div.container1000x750 {
       height: 750px;
       border: 1px solid gray;
       margin: 0 auto;
-      text-align: center;    
+      text-align: center;  
+      background-color: white
 }
-
-div.container300x300 {
-      width: 300px;
-      height: 300px;
-      border: 0px solid; 
-      margin: 0 auto;
-      text-align: left;  
-}           
 
 div.container1000x1000 {
     width: 1000px;
@@ -59,21 +84,43 @@ div.container1000x1000 {
     border: 1px solid gray;
     margin: 0 auto;
     text-align: left;
+    background-color: white
+}
+
+div.container300x300 {
+      width: 300px;
+      height: 300px;
+      border: 0px solid red;
+      margin: 0 auto;
+      text-align: left;  
+      background-color: white
+}     
+
+div.container300x250 {
+    width: 300px;
+    height: 250px;
+    border: 0px solid red;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white
+}
+
+div.container300x150 {
+    width: 300px;
+    /* height: 300px; */
+    border: 0px solid red;
+    margin: 0 auto;
+    text-align: left;
+    background-color: white
 }
 
 div.container250x320 {
     width: 250px;
     height: 320px;
-    border: 0px solid; 
+    border: 0px solid red; 
     margin: 0 auto;
     text-align: left;
     padding-left: 30px;
+    background-color: white
 }
 
-div.container300x250 {
-        width: 300px;
-        height: 250px;
-        border: 0px solid;
-        margin: 0 auto;
-        text-align: center;
-}
