@@ -1,5 +1,6 @@
 body{
-    background-color:cornflowerblue
+    background-color:cornflowerblue;
+    text-align: center;
 }
 
 h1 {
@@ -26,22 +27,63 @@ h6 {
     color: red;
 }
 
-hr.hr1080 {
+hr {
     height: 10px;
     width: 1080;
     background-color: lightgrey;
-     border: 1px solid lightgrey;
+    border: 1px solid lightgrey;
     /*border-radius: 1px;*/
-} 
+}
 
-div.tomato {
+.hr1080 {
+    height: 1px;
+    width: 1000px;
+    background-color: antiquewhite;
+    border: 1px solid antiquewhite;
+}
+
+.hr720 {
+    height: 1px;
+    width: 720px;
+    background-color: antiquewhite;
+    border: 1px solid antiquewhite;
+}
+
+p.pgit {
+    /* font-family: 'Times New Roman', Times, serif; */
+    text-align: center;
+}
+
+.tomato {
     color: tomato; 
     display: inline 
 }
 
-div.skyblue {
+.skyblue {
     color: skyblue; 
     display: inline 
+}
+
+#black {
+    color: black;    
+}
+#black300 {
+    color: black;
+    font-size: 300%;
+}
+
+#lightgray {
+    color: lightgrey;
+}
+
+#green160 {
+    color: green; 
+    font-size: 160%;   
+}
+
+#tomato120 {
+    color: tomato;
+    font-size: 120%;    
 }
 
 div.center {    
@@ -60,6 +102,15 @@ div.GeneratedText {
     text-align: center;
 }
 
+div.container1280x1280 {
+    width: 1280px;
+    /* height: 1080px; */
+    border: 0px solid red;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white
+}
+
 div.container1080x1080 {
     width: 1080px;
     /* height: 1080px; */
@@ -72,7 +123,7 @@ div.container1080x1080 {
 div.container1000x750 {
       width: 1000px;
       height: 750px;
-      border: 1px solid gray;
+      border: 0px solid gray;
       margin: 0 auto;
       text-align: center;  
       background-color: white
@@ -81,7 +132,7 @@ div.container1000x750 {
 div.container1000x1000 {
     width: 1000px;
     height: 1000px;
-    border: 1px solid gray;
+    border: 0px solid gray;
     margin: 0 auto;
     text-align: left;
     background-color: white

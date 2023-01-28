@@ -1,0 +1,96 @@
+body {
+    background-color:cornflowerblue;
+    text-align: center;
+}
+footer {   
+    text-align: center;
+}
+
+h1 {
+    color: black;
+
+}
+
+h2 {
+    color: grey;
+
+}
+
+h3 {
+    color: tomato;
+}
+
+h4 {
+    color: yellowgreen;
+}
+
+h5 {
+    color: pink;
+}
+
+h6 {
+    color: red;
+} 
+
+p.pgit {
+    font-family: 'Times New Roman', Times, serif;  
+    text-align: center;
+}
+
+hr {
+    height: 10px;
+    width: 1080;
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+    /*border-radius: 1px;*/
+} 
+
+.hr720 {
+    height: 1px;
+    width: 720px;
+    background-color: antiquewhite;
+    border: 1px solid antiquewhite;
+}
+
+div.container1280x1280 {
+    width: 1280px;
+    /* height: 1080px; */
+    border: 0px solid red;
+    margin: 0 auto;
+    text-align: center;   
+    background-color: white
+}
+
+* {
+    color: aquamarine;
+}
+
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+#purple {
+    color: purple;
+}
+
+#pink {
+    color: pink;
+}  
+
+/* #box-1{
+    color: pink;
+}  */
+
+#gray {
+    color: gray;
+}
+
+#black {
+    color: black;
+}
+
+
