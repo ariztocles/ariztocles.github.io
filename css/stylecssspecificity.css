@@ -2,9 +2,6 @@ body {
     background-color:cornflowerblue;
     text-align: center;
 }
-footer {   
-    text-align: center;
-}
 
 h1 {
     color: black;
@@ -20,19 +17,7 @@ h3 {
     color: tomato;
 }
 
-h4 {
-    color: yellowgreen;
-}
-
-h5 {
-    color: pink;
-}
-
-h6 {
-    color: red;
-} 
-
-p.pgit {
+.pgit {
     font-family: 'Times New Roman', Times, serif;  
     text-align: center;
 }
@@ -42,7 +27,6 @@ hr {
     width: 1080;
     background-color: lightgrey;
     border: 1px solid lightgrey;
-    /*border-radius: 1px;*/
 } 
 
 .hr720 {
@@ -54,7 +38,6 @@ hr {
 
 div.container1280x1280 {
     width: 1280px;
-    /* height: 1080px; */
     border: 0px solid red;
     margin: 0 auto;
     text-align: center;   
@@ -80,10 +63,6 @@ div.container1280x1280 {
 #pink {
     color: pink;
 }  
-
-/* #box-1{
-    color: pink;
-}  */
 
 #gray {
     color: gray;

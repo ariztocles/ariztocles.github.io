@@ -32,7 +32,7 @@ hr {
     width: 1080;
     background-color: lightgrey;
     border: 1px solid lightgrey;
-    /*border-radius: 1px;*/
+    border-radius: 1px;
 }
 
 .hr1080 {
@@ -49,8 +49,8 @@ hr {
     border: 1px solid antiquewhite;
 }
 
-p.pgit {
-    /* font-family: 'Times New Roman', Times, serif; */
+.pgit {
+    color: black;
     text-align: center;
 }
 
@@ -86,92 +86,34 @@ p.pgit {
     font-size: 120%;    
 }
 
-div.center {    
+.center {    
     top: 50%;     
     position:relative;       
     justify-content: center;
     transform: translateY(-50%);
 }
 
-div.GeneratedText {
+.GeneratedText {
     font-family: 'Arial Black', sans-serif;
     font-size: 4em;
     letter-spacing: 0.2em;    
-    /* background-color: #7fccff; blanchedalmond; */  
     margin: 0px;
     text-align: center;
 }
 
-div.container1280x1280 {
+.container1280x1280 {
     width: 1280px;
-    /* height: 1080px; */
     border: 0px solid red;
     margin: 0 auto;
     text-align: center;
     background-color: white
 }
 
-div.container1080x1080 {
+.container1080x1080 {
     width: 1080px;
-    /* height: 1080px; */
     border: 0px solid red;
     margin: 0 auto;
     text-align: center;   
-    background-color: white
-}
-
-div.container1000x750 {
-      width: 1000px;
-      height: 750px;
-      border: 0px solid gray;
-      margin: 0 auto;
-      text-align: center;  
-      background-color: white
-}
-
-div.container1000x1000 {
-    width: 1000px;
-    height: 1000px;
-    border: 0px solid gray;
-    margin: 0 auto;
-    text-align: left;
-    background-color: white
-}
-
-div.container300x300 {
-      width: 300px;
-      height: 300px;
-      border: 0px solid red;
-      margin: 0 auto;
-      text-align: left;  
-      background-color: white
-}     
-
-div.container300x250 {
-    width: 300px;
-    height: 250px;
-    border: 0px solid red;
-    margin: 0 auto;
-    text-align: center;
-    background-color: white
-}
-
-div.container300x150 {
-    width: 300px;
-    /* height: 300px; */
-    border: 0px solid red;
-    margin: 0 auto;
-    text-align: left;
-    background-color: white
-}
-
-div.container250x320 {
-    width: 250px;
-    height: 320px;
-    border: 0px solid red; 
-    margin: 0 auto;
-    text-align: left;
-    padding-left: 30px;
     background-color: white
 }
 

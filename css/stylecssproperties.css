@@ -2,9 +2,6 @@ body {
     background-color:cornflowerblue;
     text-align: center;
 }
-footer {   
-    text-align: center;
-}
 
 h1 {
     color: red;
@@ -62,12 +59,10 @@ hr {
     width: 1080;
     background-color: lightgrey;
     border: 1px solid lightgrey;
-    /*border-radius: 1px;*/
 }
 
 div.container1280x1280 {
     width: 1280px;
-    /* height: 1080px; */
     border: 0px solid red;
     margin: 0 auto;
     text-align: center;   
