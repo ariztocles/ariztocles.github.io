@@ -1,8 +1,9 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 .container-quotation {
     display: flex;
     position: fixed;
@@ -10,6 +11,7 @@
     right: 20%;
     bottom: 75%;
 }
+
 .container-items {
     width: 100vw;
     height: 500px;
@@ -35,7 +37,7 @@
     justify-content: center;
 }
 
-.item-1{
+.item-1 {
     width: 150px;
     height: 150px;
     border: 5px solid black;
@@ -54,13 +56,13 @@
     justify-content: center;
 }
 
-.item-2{
+.item-2 {
     width: 150px;
     height: 150px;
     border: 5px solid black;
 }
 
-.box-1, .box-2, .box-3 {
+.box-1,.box-2,.box-3 {
     height: 150px;
     width: 150px;
     display: flex;
@@ -72,21 +74,33 @@
 .box-1 {
     background-color: red;
 }
+
 .box-2 {
     background-color: blue;
 }
+
 .box-3 {
     background-color: yellow;
 }
 
-.line-1, .line-2, .line-3, .line-4 {
+.line-1,.line-2,.line-3,.line-4 {
     display: inline;
 }
 
 .hidden {
-   display: none; 
+    display: none;
 }
+
 /*DO NOT EDIT THE CODE ABOVE */
+
+
+
+
+
+
+
+
+
 
 /* START CODING BELOW line 87 👇🏽*/
 
@@ -100,87 +114,107 @@
     top: 350px;
     z-index: 1;
     width: 150px;
-    overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("https://i.imgur.com/rpn0ABT.jpeg/");  
+    background-image: url("https://m.media-amazon.com/images/I/51agik47TdL._AC_SL1001_.jpg");
 }
 
 #center {
     z-index: -9;
-    margin: auto;  
+    margin: auto;
     position: relative;
-    bottom: 20px;
-}
-
-.container-quotation{
-    z-index: 1;
-    position: absolute;
-    top:220px;
-    left: 870px;  
-} 
+    top: 225px;
+}   
 
 .hidden {
     display: block;
 }
 
-.line-1, .line-2, .line-3, .line-4 {
+.line-1,.line-2,.line-3,.line-4 {
     display: block;
     position: relative;
     text-align: left;
 }
 
+#crop1 {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
 
 
 
+
+
+
+
+
+
+
+
+.img1, .img2, .img3, .img4 {
+        position: relative;
+        z-index: 100;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.img1{
+    background-image: url("https://m.media-amazon.com/images/I/51agik47TdL._AC_SL1001_.jpg");
+    margin: auto;
+    top: 2%;
+}
+
+.img2 {    
+    background-image: url("https://wonder-day.com/wp-content/uploads/2022/06/wonder-day-very-cute-kitty-pictures-47.jpg");
+    left: 31.5%;
+    top: 23px;
+}
+
+.img3 {
+    background-image: url("https://static.boredpanda.com/blog/wp-content/uploads/2021/02/602be3cb53c96_65fmdbh1ja951__700.jpg");
+    margin: auto;
+    top: 7.5%;
+}
+
+.img4 {
+    background-image: url("https://i.imgur.com/rpn0ABT.jpeg/");
+    left: 57%;
+    top: -55%;
+
+}
 
 body {
     background-color: cornflowerblue;
     text-align: center;
 }
 
-#black {
-    color: black; 
-    text-align: center;
-    background-color: cornflowerblue;
- }
-
-.container1 { 
-    width: 100vw;
-    border: 0px solid red;
+.container1 {
+    width: 100vw; 
     margin: 0 auto;
-    z-index: -10;
+    z-index: -100;
     position: fixed;
-    top: 0;           
+    top: 0;
 }
 
-.container2 {
+.container2 {                                                 
     width: 1280px;
-    height: 475px;
-    border: 0px solid red;
+    height: 500px;                  
     margin: 0 auto;
-    z-index: -9;
+    z-index: -90;
     background-color: white;
+    /* border: 0px solid red; */
     position: relative;
     top: 15px;
 }
 
-.box-5 {
-    height: 150px;
-    width: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: red;
-    border: 1px solid red;
+#black, #pgit{
+    color: black;
+    text-align: center;
 }
 
-.box-6 {
-    height: 150px;
-    width: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: blue;
-    border: 1px solid blue;
+#pgit{
+    position: relative;
+    top: 410px;
 }
+
