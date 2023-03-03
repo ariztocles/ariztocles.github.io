@@ -1,0 +1,68 @@
+body{
+    background-color:cornflowerblue;
+    text-align: center;
+   
+}
+
+h1 {
+    color: black;
+}
+
+hr {
+    height: 1px;
+    width: 720px;
+    background-color: antiquewhite;
+    border: 1px solid antiquewhite;
+}
+
+#pgit {
+    color: black;
+}
+
+#black {
+    color: black;  
+}
+
+.container1 {
+    background-color: cornflowerblue; 
+}
+
+.container2{
+    background-color: white;
+}
+
+.centerv, #centerh, .right, #top, #bottom, #bottom2{
+    text-align: left;
+    display: flex;
+    position: relative;
+}
+
+.centerv { 
+    justify-content: center;
+    /*top: 50%; 
+    transform: translateY(-50%); */
+}
+
+#centerh {
+    align-items: center;  
+}
+
+.right {
+    justify-content: end; 
+}
+
+#top {    
+    /* align-items: start;  */
+    top: -50px;
+}
+
+#bottom {      
+    /* align-items: end; */
+    bottom: -150px;
+}
+      
+#bottom2{     
+    /* align-items: end; */
+    bottom: -100px;    
+}
+
