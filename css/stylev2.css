@@ -1,0 +1,181 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: cornflowerblue;
+}
+
+.header {
+    border: 2px solid cornflowerblue;
+    }
+
+
+
+.sidebar,.navigation,.ads {
+    border: 2px solid antiquewhite; 
+    width: 100%;
+    height: 100%;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: 3fr 1fr 10fr 3fr; 
+    grid-gap: 15px;
+}
+
+.bg {
+    grid-column: 1/5;
+    grid-row: 2/5;
+    background-color: cornflowerblue;
+    z-index: -1;
+    height: 100.2%;
+    width: 1268px;
+}
+
+.header,.sidebar,.navigation,.main,.ads,.footer{
+    display: flex;    
+}
+
+.header,.sidebar,.navigation,.ads,.footer {
+    background-color: cornflowerblue;
+}
+
+.main {
+    background-color: white;
+}
+
+
+.header,.footer {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation,.sidebar,.ads,.main {
+    flex-direction: column;
+}
+
+.header {
+    grid-column: 1/4;
+    grid-row: 1/1;
+}
+
+.sidebar {
+    grid-column: 1/1;
+    grid-row: 2/4;
+}
+
+.navigation {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.main {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.ads {
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+
+.footer {
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+
+.boxlogo {
+    grid-column: 2/4;
+    grid-row: 1/1;  
+   /* background-color: red; */ 
+    margin: 30px 0px 0px 85px; 
+}
+
+hr {
+    height: 1px;
+    width: 720px;
+    background-color: rgb(51, 42, 30);
+    border: 1px solid antiquewhite;
+}
+
+.GeneratedText, .header{
+   background-color: cornflowerblue; 
+}
+
+.container1 {   
+    z-index: -100;
+}
+
+.container2{   
+    width: 1280px;
+    margin: 0px auto;
+    z-index: -10;
+    align-self: center;
+}
+
+.txcenter, .GeneratedText, .centerlogo{
+    text-align: center;
+}
+
+.GeneratedText {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 2.5em;
+    letter-spacing: 0.2em;
+    margin: 0px;
+}
+
+#black160 {
+    color: black;
+    font-size: 160%;
+}
+
+#green120 {
+    color: green;
+    font-size: 120%;
+}
+
+#tomato110 {
+    color: tomato;
+    font-size: 110%;
+}
+
+hr {
+    height: 10px;
+    width: 100%;
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+    border-radius: 1px;
+}
+
+.hr720 {
+    height: 1px;
+    width: 720px;
+    background-color: antiquewhite;
+    border: 1px solid antiquewhite;
+}
+
+.box, .boxlogo{
+    border: 0px solid red;
+    height: 240px;
+    width: 200px;
+}
+
+.box2 {
+    border: 0px solid red;
+}
+
+.box3 {
+    border: 0px solid red;
+    width: 97%;
+    padding: 0px 10px 0px 10px;
+
+}
+
+
+
+
+
