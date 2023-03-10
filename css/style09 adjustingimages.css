@@ -1,0 +1,151 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color:cornflowerblue; 
+    text-align: center; 
+    margin: 0px auto;
+}
+
+h2{
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif;
+    
+}
+
+p{ 
+  color: white;
+  margin-left: 27px;
+}
+
+
+.container1 {    
+    z-index: -100;
+    width: 1280px;
+    background-color: white;
+    margin: 0px auto;
+    justify-content: center; 
+    width: 1024px;
+    flex-direction: column;
+}
+
+.box1 {
+    z-index: 1;
+    justify-content: space-between;
+    background-color: #162040;    
+    width: 1024px;
+      
+}
+
+.container1, .box1, 
+.refocus,.learn,.mentors,.success,.link,
+.learn2,.mentors2,.success2,.bg{
+    display: flex;
+}
+
+.refocus, .learn, .mentors, .success, .link
+.refocus2,.learn2,.mentors2,.success2,.bg{
+    border: 0px solid red;
+    height: 50px;
+    align-items: center;
+}
+
+.refocus{
+    margin-left: 64px;
+}
+
+.link {
+    margin-right: 64px;   
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;   
+    z-index: 1;
+}
+
+.bg{    
+    background-color: #162040;
+    z-index: -1;
+    border: 0px solid red;
+    grid-column: 1/17;
+    grid-row: 1/1;
+}
+
+.refocus2 {
+    grid-column: 2/3;
+    grid-row: 1/1;
+    display: flex;
+    align-self: center; 
+} 
+.learn2{
+    grid-column: 12/13;
+    grid-row: 1/1;
+}
+.mentors2 {
+    grid-column: 13/14;
+    grid-row: 1/1;
+}
+.success2 {
+    grid-column: 14/17;
+    grid-row: 1/1;
+}
+
+.img {
+    z-index: 100;
+}
+
+.img2{ 
+    grid-column: 2/3;
+    grid-row: 1/1; 
+    transform: translateY(-25%);
+}
+
+
+@media only screen and (max-width: 319px) {
+
+    .img, .img2 {
+        display: none;
+    }
+
+    h2 {
+        display: block;
+        font-size: 40px;
+        color: red
+    }
+}
+@media only screen and (min-width: 320px) {
+    .img,.img2 {
+        display: none;        
+    }
+    h2{
+    display: block;
+    font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .img,.img2 {
+        display: block;
+    }
+
+    h2 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .img, .img2 {
+        display: none;
+    }
+    h2 {
+        display: block;
+        font-size: 30px;
+    }
+
+}
+

@@ -164,8 +164,13 @@ hr {
     width: 200px;
 }
 
+.box1 {
+    border: 0px solid red;
+    
+}
 .box2 {
     border: 0px solid red;
+    margin-left: 20px;
 }
 
 .box3 {
@@ -174,6 +179,15 @@ hr {
     padding: 0px 10px 0px 10px;
 
 }
+
+/* 
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-self: center;
+        justify-items: center; */
 
 
 
