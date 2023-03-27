@@ -1,3 +1,12 @@
+let firstName = "Aristocles";
+let middleName = "of";
+let lastName = "Messene";
+const msg = (`Hello, ${firstName} ${middleName} ${lastName}! "How can we help you today?" `);
+
+console.log(msg);
+
+document.write("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~<br> \"Hello, Aristocles of Messene!\"<br> \"How can we help you today?\" <br>~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~<br><br><br><br>");
+
 console.log("\"Hello Refocus !!\"");
 console.log("~");
 console.log("\"I am gonna be an awesome web developer.\"");
