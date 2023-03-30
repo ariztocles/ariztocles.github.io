@@ -15,6 +15,13 @@
 a:hover {
       color: blue; 
 }
+.underline{
+    text-decoration: underline;
+}
+
+input {
+    width: 20%;
+}
 
  body {
     font-family: sans-serif;
@@ -61,19 +68,19 @@ a:hover {
     flex: 1;
     border-radius: 10px;
     margin: 20px 10px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25); */
     padding: 15px 20px;
-    background-color: #f5f5f5; 
+    /* background-color: #f5f5f5;  */
+}
+
+.boxx {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25); 
+    padding: 15px 20px;
 }
 
 .btns {
     display: flex;
     justify-content: space-between;
-}
-
-
-.patient{
-    text-decoration: underline;
 }
 
 .boxx {
@@ -92,7 +99,6 @@ a:hover {
 .txcenter{
    text-align: center;
 }
-
 
 @media (max-width: 768px) { 
     .container{

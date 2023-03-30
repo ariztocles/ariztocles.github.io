@@ -11,7 +11,7 @@ function getUserInput(){
      var firstName = document.getElementById("firstName").value;
      var LastName = document.getElementById("lastName").value;
     //  document.getElementById("patient").innerHTML = firstName + " " + LastName;
-     document.getElementById("patient").innerHTML = "Hello," + "<span class='patient'>" + firstName + " " + LastName + "</span><br>" + "How can we help you today?";
+     document.getElementById("patient").innerHTML = "Hello," + "<span class='underline'>" + firstName + " " + LastName + "</span><br>" + "How can we help you today?";
 
 }
 
