@@ -23,7 +23,8 @@ function btnToday(){
      var current_day =  new Date().getDate();
 
     let age2 = currentyear - birthyear;
-    let agemonth = currentmonth - birthmonth;   
+    let agemonth = currentmonth - birthmonth;  
+    let ageday = current_day - birthdate;   
     //  var month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31] ;
 
     if (current_day > birthdate) { 
