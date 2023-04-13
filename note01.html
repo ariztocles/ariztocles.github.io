@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refocus</title>
+    <script src="https://kit.fontawesome.com/f18e088988.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style notes.css">
+
+</head>
+<body>        
+    <header>
+        <div><a class="navi" href="https://discord.com/" title="discord"><p>Ariz&nbspC.&nbspPiñera</p><p>Refocus | Cohort 23</p></a></div>
+        <div class="title"><h2>Hello Refocus</h2></div>
+        <div><a class="navi" id="none" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></div>  
+    </header>
+    <article class="logo"><figure><img src="asset/img/hello.webp" alt="hello"></figure></article>   
+    <article class="alink"><a class="navi" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></article>
+
+    <main>
+        <div class="col">
+            <div>                            
+<pre>
+<b class="sky">Variable:                              </b>
+<hr>
+var   - Yes Re-assign - Yes Re-decladed
+let   - Yes Re-assign - <b class="red">NO  Re-declared</b>
+const - <b class="red">NO  Re-assign - NO  Re-declared</b>
+<hr>
+<b class="green">let firstVariable = 5;</b>
+
+if(true){
+    <b class="lgreen" id="black">firstVariable = 8;</b>
+    console.log(firstVariable); // = 8 
+}
+
+<b class="lgreen" id="black">console.log(firstVariable); // = 8 </b>
+<u>let   - <b class="blue">Yes Re-assign</b> - NO  Re-declared</u>
+<hr>
+<b class="green">let firstVariable = 5;</b>
+
+if(true){
+    <b class="lgreen" id="black">let firstVariable = 8; </b>
+    console.log(`let: &{firstVariable}`); // = 8
+}
+
+<b class="red" id="black">console.log(`let: &{firstVariable}`); // = 5 </b>
+<u>let   - Yes Re-assign - <b class="red">NO  Re-declared</b></u>
+<b class="lgreen" id="black">
+let length = 40;   
+cconsole.log(typeof(length)); // = 46.15 = 2 </b>
+<u>prints data type of variable</u>
+<hr>
+<b class="lgreen" id="black">
+console.log(600 % 13); // = number </b>
+<u>modulo - checks divisibility  returns remainder</u>
+
+<b class="lgreen" id="black">
+console.log(true || true); // or </b> 
+<u>1 shoud be true = true</u>
+<b class="lgreen" id="black">
+console.log(true && true); // and </b> 
+<u>all shoud be true = true</u>  
+<hr>
+<b class="sky">Functions:                              </b>
+<hr>
+function hello(name){ //function name   
+    console.log(`Hello &{name}`);
+}
+
+hello('Deku'); // funtion call
+hello('kachan'); //
+<b class="lgreen" id="black">
+hello Deku&nbsp;
+hello kachan </b>
+<hr>
+<b class="sky">Arrow Functions:                              </b>
+<hr>
+helloWorld = () => { 
+    console.log("Hello World" + number);
+}
+
+helloWorld(56);
+<b class="lgreen" id="black">
+Hello World 56 </b>
+<hr>
+funcion add(a,b){
+    return a+b; // return
+}
+<u>returns that value to the caller of the function</u> 
+
+multiply = (a,b) => {
+    return a*b;
+}
+<b class="lgreen" id="black">console.log(add(1,2)); // = 3&nbsp;
+console.log(multiply(1,2)); // =2 </b>
+<hr>
+</pre>                       
+            </div> 
+            <div class="">                 
+               
+  
+            </div>
+        </div>
+
+        <div class="col">
+            <div class=""> 
+<pre>
+<b class="sky">Conditional Statements:                              </b>
+<hr>
+if( add(100,50) != 150){
+    console.log("correct1"); 
+} else if (multiply(3,3) === 10) {
+    console.log("correct2"); 
+} else {
+    console.log("error"); 
+}
+<b class="lgreen" id="black">error </b>
+<hr>
+<b class="sky">Cycles and Loops:                              </b>
+<hr>
+<b class="yellow" id="black">for </b>( let start = 0; start < 10; start++){
+    console.log(start);
+}
+
+let i = 0; 
+<b class="yellow" id="black">while </b>(i < 10){
+    console.log(i);
+    i++;
+}
+<b class="lgreen" id="black">0 1 2 3 4 5 6 7 8 9 </b>
+
+let j = 1;
+<b class="yellow" id="black">do </b> {
+    console.log(j);// performs code at least once
+    j++;
+} while ( j < 1);
+<b class="lgreen" id="black">1 </b>
+<hr>
+<b class="sky">Self Study: Add, Even Numbers                               </b>
+
+<b class="yellow" id="black">for</b> ( let i = 1; i <= 10; i++){
+    if(i % 2 == 1){  
+    console.log(`${i} is odd`); 
+    }
+    else { // (i % 2 == 0)
+    console.log(`${i} is even`);
+    } 
+}
+
+let i = 0; 
+<b class="yellow" id="black">while</b>(i < 10){
+    i++;
+    if(i % 2 == 1){  
+    console.log(`${i} is odd`); 
+    }
+    else { // (i % 2 == 0)
+    console.log(`${i} is even`);
+    }
+}
+
+let i = 0;
+<b class="yellow" id="black">do</b>  {   
+    i++;
+    if(i % 2 == 1){  
+        console.log(`${i} is odd`); 
+    }
+    else { // (i % 2 == 0)
+    console.log(`${i} is even`);
+    } 
+} while ( i < 10);
+
+<b class="lgreen" id="black">
+1 is even    2 is odd    3 is even    4 is odd    5 is even&nbsp
+6 is odd    7 is even    8 is odd    9 is even    10 is odd </b>
+<hr>
+
+
+</pre>                                
+                                     
+            </div> 
+            <div class="">               
+ 
+            </div>
+        </div>
+
+    </main>
+
+    <nav>
+        <div class="box">
+            <div>                
+                <a href="note01.html" title="note 1">
+                    <ul><b>Notes: 1</b>
+                        <li> Variable:</li>
+                        <li> Functions:</li>
+                        <li> Conditional Statements:</li>
+                        <li> Cycles and Loops:</li>
+                    </ul></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div>                
+                <a href="#" title="note 2">
+                    <ul><b>Notes: 2</b>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div>                
+                <a href="#" title="note 3">
+                    <ul><b>Notes: 3</b>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul></a>
+            </div>
+        </div>
+
+       
+ 
+    </nav>
+
+    </main>
+
+    <!-- <aside>
+    </aside> 
+    <footer>
+    </footer>-->
+
+
+</body>
+</html>

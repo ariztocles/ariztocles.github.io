@@ -51,21 +51,6 @@ input {
     background-color: black;
 }
 
-#black160 {
-    color: black;
-    font-size: 160%;
-}
-
-#green120 {
-    color: green;
-    font-size: 120%;
-}
-
-#tomato110 {
-    color: tomato;
-    font-size: 110%;
-}
-
 body {
      font-family: sans-serif;
      font-size: 16px;
@@ -78,11 +63,10 @@ body {
      display:grid;
      /* gap: 10px; */
      grid-template-areas: 
-     'header header header'
-     'nav content sidebar'
-     'nav footer footer';
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 200px 1080px 100px;
+     'header header'   
+     'nav content';
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 220px 1500px;
     }   
 
 .logo{  
@@ -92,16 +76,27 @@ body {
     padding-left: 320px;
 }
 
+.alink{  
+    z-index: 1;
+    grid-column: 2;
+    grid-row: 1;  
+    justify-self: end; 
+    align-self: center;  
+}
 
-header {
-    grid-area: header;
+#none {
+    color: #3474e6; 
+}
+
+header {   
+    grid-area: header;    
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
 }
 
-nav {
+nav {    
     grid-area: nav;
 }
 
@@ -109,24 +104,13 @@ main {
     grid-area: content;
     display: flex;
     flex: 1; 
-    flex-direction: column;
     /* flex-wrap: wrap;  */
     /* margin: 0 auto; */
     justify-content: center;
 }
 
-aside{
-    grid-area: sidebar;
-}
 
-
-footer {
-    grid-area: footer;
-    display: flex;
-    flex: 1
-}
-
-header, footer, main, aside, nav {
+header,  main,  nav {
     background-color: rgb(255, 245, 245);
     color :black;
     padding: 5px;
@@ -140,17 +124,7 @@ header {
 nav {
    background-color: rgb(255, 245, 230);
 
-}
-
-aside {
-    background-color:rgb(255, 230, 245);
-
-}
-
-footer {
-    background-color: rgb(240, 245, 245);
-
-}   
+} 
 
 .col {
     /* display: flex; */
@@ -160,19 +134,8 @@ footer {
     /* height: 400px;     */
 }
 
-.pad{
-    padding-right: 10px;  
-    /* position: relative;
-    left:100px; */
-}
 
-.box0 {
-    height: 480px;
-    display: flex;
-    flex: 1;
-}
-
-.box, .boxempty, .box1, .col, .col1st {    
+.box, .boxempty, .box1, .col {    
     flex: 1;
     /* width: 100%; */
     border-radius: 10px;
@@ -182,21 +145,6 @@ footer {
     background-color: white;
     height: minmax(150px, auto);
 }
-
-
-.col1st {   
-    display: flex;
-    width: 1000px;
-    /* height: px; */
-}
-
-
-.col2nd{   
-    display:flex; 
-    /* flex: 1 1 100%; */
-   
-}
-
 
 .boxempty {    
     display:flex;
@@ -212,7 +160,7 @@ footer {
 }
 
 
-.title {
+.title {    
     display: inline-block; 
     font-family: 'Arial Black', sans-serif;
     font-size: 3em;
@@ -222,30 +170,29 @@ footer {
     text-align: center;
 }
 
-.navi {
+.navi {  
     display: inline-block;
     font-weight: bold;
     border: 0px solid red;
     color: #0151cc;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;   
 }
 
-/* .img {display:none} */
-
-
+/* 
 @media (max-width: 768px) {
+*/
+
+@media (max-width: 960px) {
     body {
         /* grid-template-rows: 100px; */
         /* grid-auto-rows: minmax(50px, auto);*/
         display: grid;
         grid-template-areas:
             'header header'
-            'nav sidebar'
-            'footer footer'
-            'content content';          
-            
+            'nav nav'
+            'content content';                        
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 1fr 100px 1280px ;
+        grid-template-rows: 100px 1fr 3000px;
      }
 
     .logo{
@@ -256,15 +203,15 @@ footer {
         grid-area: header;
         flex-direction: column; 
         text-align: center; 
+        
     }
-
     #none {
         color:  #0151cc;
     }
 
     .alink{
         display:none
-    } 
+    }    
 
     .title {
         display: inline-block;
@@ -280,42 +227,9 @@ footer {
         grid-area: content;
         flex-direction: column;  
         /* margin: 0 auto; */
-        align-items: center;
+        align-items: center;      
     }
-
-    aside{
-        grid-area: sidebar;
-
-    }
-
-    footer {
-        grid-area: footer;
-        /* display: flex; */
-
-    }
-
     .col{
-        width: 480px;       
+        width: 480px       
     }
-
-    .col1st {       
-        width: 480px;
-        height: 480px;
-        margin: 0 auto;
-        justify-self: center;
-        /* height: 480px;   */
-   
-    }
-
-    .col2nd {       
-        /* width: 480px; */
-        display: flex;
-        justify-self: center;
-        flex-direction: column;  
-
-        margin: 0 auto;  
-    }
-
-
-
 } 
