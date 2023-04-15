@@ -66,7 +66,7 @@ body {
      'header header'   
      'nav content';
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 220px 1500px;
+    grid-template-rows: 200px 1500px;
     }   
 
 .logo{  
@@ -135,7 +135,7 @@ nav {
 }
 
 
-.box, .boxempty, .box1, .col {    
+.box, .boxempty, .box1, .col ,.col1st{    
     flex: 1;
     /* width: 100%; */
     border-radius: 10px;
@@ -229,7 +229,7 @@ nav {
         /* margin: 0 auto; */
         align-items: center;      
     }
-    .col{
+    .col,.col1st{
         width: 480px       
     }
 } 

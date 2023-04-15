@@ -66,6 +66,13 @@ input {
     font-size: 110%;
 }
 
+.wordspace1{
+    word-spacing: -1px;
+    letter-spacing: -1px;
+    
+   
+}
+
 body {
      font-family: sans-serif;
      font-size: 16px;
