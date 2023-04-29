@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refocus</title>
+    <script src="https://kit.fontawesome.com/f18e088988.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style notes.css">
+
+</head>
+<body>        
+    <header>
+        <div><a class="navi" href="https://discord.com/" title="discord"><p>Ariz&nbspC.&nbspPiñera</p><p>Refocus | Cohort 23</p></a></div>
+        <div class="title"><h2>Hello Refocus</h2></div>
+        <div><a class="navi" id="none" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></div>  
+    </header>
+    <article class="logo"><figure><img src="asset/img/hello.webp" alt="hello"></figure></article>   
+    <article class="alink"><a class="navi" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></article>
+
+    <main>
+        <div class="col1st">
+            <div class=""> 
+<pre>
+<b class="sky">Object                              </b>
+<hr>
+Keyed Value Pair or Proerty
+
+var obj = {
+    name: "aristocles",
+    "last name": "of Messene",
+    age: 22
+}
+
+<b class="yellow" id="black">console.log(obj);</b>
+
+<b class="lgreen" id="black">{ name: 'aristocles', 'last name': 'of Messene', age: 22 }</b>
+
+<b class="yellow" id="black">obj.hobby = "coding";
+
+console.log(obj);
+console.log(obj.name);
+console.log(obj["last name"]);</b>
+
+<b class="lgreen" id="black">{
+    name: 'aristocles',
+    'last name': 'of Messene',
+    age: 22,
+    hobby: 'coding'
+}
+aristocles
+of Messene</b>
+
+
+
+</pre>                                
+                                     
+            </div> 
+        </div>
+        <div class="col1st">
+            <div>                            
+
+<b class="sky">Home Assignment: Loyalty Program                             </b>
+<hr>
+<pre>
+let customer = {
+    customer_name: "Johnny Manggo", 
+    points: 12300,
+    cart: [
+        {
+            item: "Shampoo",
+            quantity: 2,
+            price_$: 3.00
+        },
+        {
+            item: "Soap",
+            quantity: 2,
+            price_$: 2.00
+        }, 
+        {
+            item: "Toothpaste",
+            quantity: 1,
+            price_$: 3.00
+        }
+    ]    
+}
+
+<b class="yellow" id="black">console.log("Hello,"+" "+ customer.customer_name +"! "+"We are happy to see you today.");
+console.log("Your Current Poits are: "+ customer.points);
+console.log(" ");
+console.log("Purchased Items:");</b>
+
+let total_bill = 0;
+let new_points  = 0;
+<b class="yellow" id="black">let i = 0;</b><b class="lgreen" id="black"> // i - itterates cart array items</b>
+do {
+  console.log(`${customer.cart[i].quantity} x ${customer.cart[i].item} ---- $
+               ${customer.cart[i].price_$.toFixed(2)}`);</b>
+  total_bill += customer.cart[i].quantity * customer.cart[i].price_$;
+  new_points += customer.cart[i].quantity;
+  i++;
+} while (i < customer.cart.<b class="yellow" id="black">length</b>);
+
+<b class="yellow" id="black">console.log("------------------------------");
+console.log(`total bill: $ ${total_bill.toFixed(2)}`);
+console.log(`New current points: ${new_points+customer.points}`);</b>
+
+<b class="lgreen" id="black">Hello, Johnny Manggo! We are happy to see you today.
+Your Current Poits are: 12300
+ 
+Purchased Items:
+2 x Shampoo ---- $ 3.00
+2 x Soap ---- $ 2.00
+1 x Toothpaste ---- $ 3.00
+------------------------------
+total bill: $ 13.00
+New current points: 12305</b>
+<hr>
+old version:
+
+let q1 = customer.cart[0].quantity; //2
+let p1 = customer.cart[0].price_$; //3
+let q2 = customer.cart[1].quantity; //2
+let p2 = customer.cart[1].price_$; //2
+let q3 = customer.cart[2].quantity; //1
+let p3 = customer.cart[2].price_$; //3
+let points = customer.points;
+
+do  {sub1 = (q1)*(p1);} while ( sub1 < 1);
+do  {sub2 = (q2)*(p2);} while ( sub2 < 1);
+do  {sub3 = ((q3)*(p1));} while ( sub3 < 1);
+do  {currentpoints = points+q1+q2+q3;} while ( currentpoints < 1);
+let total_bill = (sub1+sub2+sub3).toFixed(2);
+
+<b class="yellow" id="black">console.log( customer.cart[0].quantity + " x " + customer.cart[0].item + " ---- $ " + sub1.toFixed(2));
+console.log( customer.cart[1].quantity + " x " + customer.cart[1].item + " ---- $ " + sub2.toFixed(2));
+console.log( customer.cart[2].quantity + " x " + customer.cart[2].item + " ---- $ " + sub3.toFixed(2));
+console.log( "------------------------------");
+console.log( "Total Bill: $ "+total_bill);
+console.log( "New Current Points: " + currentpoints);</b>
+
+</pre>                       
+            </div> 
+    </main>
+
+    <nav>
+        <div class="box">
+            <div>              
+                <a href="index.html" title="home">
+                    <ul><h2><b>HOME</b></h2>
+            </div> 
+        </div>  
+ 
+    </nav>
+
+    </main>
+
+<script src="js/note03loyaltyprogram.js"></script>
+</body>
+</html>

@@ -8,8 +8,7 @@ for(i = 0;  i < letters.length;   i++){
     }    
 
 for(i = 0;  i < letters.length;   i++){
-    let hiddenWord = letters[order[i]];         
+    hiddenWord = letters[order[i]];         
     console.log(`${hiddenWord}`);
     }
 
-    
