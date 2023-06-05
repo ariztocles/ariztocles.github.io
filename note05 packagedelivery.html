@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refocus</title>
+    <script src="https://kit.fontawesome.com/f18e088988.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style notes.css">
+
+</head>
+<body>        
+    <header>
+        <div><a class="navi" href="https://discord.com/" title="discord"><p>Ariz&nbspC.&nbspPiñera</p><p>Refocus | Cohort 23</p></a></div>
+        <div class="title"><h2>Hello Refocus</h2></div>
+        <div><a class="navi" id="none" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></div>  
+    </header>
+    <article class="logo"><figure><img src="asset/img/hello.webp" alt="hello"></figure></article>   
+    <article class="alink"><a class="navi" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></article>
+
+    <main>
+        <div class="col1st">
+            <div class=""> 
+<pre>
+<div class="sky"><b>Self Study:  Package Delivery</b></div>
+<hr>
+Create a program that will convert seconds to a readable format. 
+5212 seconds should be converted to 1 hour, 26 minutes, and 52 seconds.
+
+Create a function that will convert seconds to hours and return 
+the value of an object with two keys: “hours” and “remainder".
+
+<div class="antique" id="">1. Define a function named “toHours” with one parameter named “seconds.”</div>
+<div class="lgreen" id="black">function toHours(seconds) {
+  // code here
+  }</div>
+<div class="antique" id="">2. Create a variable named “hours.” Set its value to Math.floor(seconds / 3600);</div>
+<div class="lgreen" id="black">function toHours(seconds) {
+    let hours = Math.floor(seconds / 3600);
+  }</div>
+<div class="antique" id="">3. Create another variable named “remainder” and set its value to a statement 
+that computes the remainder of “seconds” divided by 3600.<b class="red" id="">
+Hint: To compute the remainder, use the modulus operator (%)</b></div>
+<div class="lgreen" id="black">function toHours(seconds) {
+    let hours = Math.floor(seconds / 3600);
+    let remainder = seconds % 3600; 
+  }</div>
+<div class="antique" id="">4. Use the “return” keyword to set the function output as an object with two key
+value pairs. The first key is “hour” set to the “hour” variable. The second key is 
+“remainder” set to the “remainder” variable.<b class="red" id="">
+Hint: The returned value should be of the object data type. Here’s an example 
+how it can look: return {field1: variable_value1, field2: variable_value1}.</b></div>
+<div class="lgreen" id="black">function toHours(seconds) {
+    let hours = Math.floor(seconds / 3600);
+    let remainder = seconds % 3600;  
+    return { <b class="red">hour</b>: hours, remainder: remainder, };
+}</div>
+<hr>
+Create the second function that will convert seconds to minutes and return
+the values of an object with two keys: “minutes” and “remainder.”
+<div class="antique" id="">1. Define a function named “toMinutes” with one parameter named “seconds.</div>
+<div class="lgreen" id="black">function toMinutes(seconds) {
+    //code here
+  }</div> 
+<div class="antique" id="">2. Create a variable named “minutes.” Set its value to: Math.floor(seconds / 60)</div>
+<div class="lgreen" id="black">function toMinutes(seconds) {
+    let minutes = Math.floor(seconds / 60);
+  }</div>
+<div class="antique" id="">3. Create another variable named “remainder” and set its value to a statement 
+that computes the remainder of “seconds” divided by 60.</div>
+<div class="lgreen" id="black">function toMinutes(seconds) {
+    let minutes = Math.floor(seconds / 60);
+    let remainder = seconds % 60;
+  }</div>
+<div class="antique" id="">4. Use the “return” keyword to set the function output as an object with two key
+value pairs. The first key is “minutes” set to the “minutes” variable. The second 
+key is “remainder” set to the “remainder” variable.</div>
+<div class="lgreen" id="black">function toMinutes(seconds) {
+    let minutes = Math.floor(seconds / 60);
+    let remainder = seconds % 60;
+    return { minutes: minutes, remainder: remainder, };
+  }</div>  
+</pre>                                
+                                     
+            </div> 
+        </div>
+        <div class="col1st">
+            <div>                           
+<pre>
+
+<div class="antique" id="">1. Define a function named “humanDuration” with one parameter named “duration".</div>
+<div class="lgreen" id="black">function humanDuration(duration) {
+  // code here
+  }</div>
+<div class="antique" id="">2. Create a new variable inside the “humanDuration” function, and name it 
+“hoursObject.” 
+Set the value of “hoursObject” by calling the function 
+“toHours” with “duration” as an argument.</div>
+<div class="lgreen" id="black">function humanDuration(duration) {
+  let hoursObject = toHours(duration);
+  }</div>
+<div class="antique" id="">3. Create another variable, and name it “minutesObject.” Set its value by calling 
+the function “toMinutes” 
+with the remainder of “hoursObject” as an argument.</div>
+<div class="lgreen" id="black">function humanDuration(duration) {
+  let hoursObject = toHours(duration);
+  let minutesObject = toMinutes(hoursObject.remainder);
+}</div>
+<div class="antique" id="">4. Create another variable, and name it “seconds.” Set its value as 
+“minutesObject.remainder.”
+By doing this, you get the computed remainder of “minutesObject” 
+and set it as the “seconds” variable’s value.</div>
+<div class="lgreen" id="black">function humanDuration(duration) {
+  let hoursObject = toHours(duration);
+  let minutesObject = toMinutes(hoursObject.remainder);
+  let seconds = minutesObject.remainder;
+  }</div>
+<div class="antique" id="">5. Use the <b class="red">“return”</b> keyword to set the function output as:
+`The formatted duration of ${duration} is
+${hoursObject.hours} ${hoursObject.hours > 1? Hours : Hour"}, 
+${minutesObject.minutes} ${minutesObject.minutes > 1? Minutes : 
+Minute"} and ${seconds} ${seconds > 1? Seconds : Second"}`</div> 
+<div class="lgreen" id="black">function humanDuration(duration) {
+  let hoursObject = toHours(duration);
+  let minutesObject = toMinutes(hoursObject.remainder);
+  let seconds = minutesObject.remainder;
+
+  <b class="red">console.log</b>(
+    `The formatted duration of ${duration} is ${hoursObject.<b class="red">hour</b>} ${
+      hoursObject.<b class="red">hour</b> > 1 ? "Hours" : "Hour"
+    }, ${minutesObject.minutes} ${
+      minutesObject.minutes > 1 ? "Minutes" : "Minute"
+    } and ${seconds} ${seconds > 1 ? "Seconds" : "Second"}`
+  );
+}</div>
+<div class="yellow" id="black">humanDuration(4800);
+humanDuration(5212);
+humanDuration(300);</div>
+<div class="lgreen" id="black">The formatted duration of 4800 is 1 Hour, 20 Minutes and 0 Second
+The formatted duration of 5212 is 1 Hour, 26 Minutes and 52 Seconds
+The formatted duration of 300 is 0 Hour, 5 Minutes and 0 Second</div>
+
+
+
+
+
+
+
+
+
+
+</pre>                       
+            </div> 
+    </main>
+
+    <nav>
+        <div class="box">
+            <div>              
+                <a href="index.html" title="home">
+                    <ul><h2><b>HOME</b></h2>
+            </div> 
+        </div>  
+ 
+    </nav>
+
+    </main>
+
+<script src="js/note05pakagedelivery.js"></script>
+</body>
+</html>

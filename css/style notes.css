@@ -25,6 +25,10 @@ input {
     width: 50px;
 }
 
+.white{
+    color:white
+}
+
 .yellow{
     color:yellow
 }
@@ -139,6 +143,9 @@ nav {
     /* height: 400px;     */
 }
 
+.antique {    
+    background-color: antiquewhite;
+}
 
 .box, .boxempty, .box1, .col ,.col1st{    
     flex: 1;
