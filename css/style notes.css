@@ -43,16 +43,40 @@ input {
 .blue{
     color: blue;
 }
+.orange{
+    color: orange;
+}
+
+.tomato{
+    color: tomato;
+}
+
+.blueviolet{
+    color: blueviolet;
+}
+.brown{
+    color: brown;
+}
+
 .lgreen{
     color:lightgreen;
 }
 
 .sky{
-    background-color: skyblue
+    background-color: skyblue;      
+}
+.sky2{
+    background-color: skyblue;
+    color: black; 
 }
 
 #black{
     background-color: black;
+}
+
+#grey{
+    background-color:grey;
+    border-color: grey;
 }
 
 body {

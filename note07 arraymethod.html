@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refocus</title>
+    <script src="https://kit.fontawesome.com/f18e088988.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style notes.css">
+
+</head>
+<body>        
+    <header>
+        <div><a class="navi" href="https://discord.com/" title="discord"><p>Ariz&nbspC.&nbspPiñera</p><p>Refocus | Cohort 23</p></a></div>
+        <div class="title"><h2>Hello Refocus</h2></div>
+        <div><a class="navi" id="none" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></div>  
+    </header>
+    <article class="logo"><figure><img src="asset/img/hello.webp" alt="hello"></figure></article>   
+    <article class="alink"><a class="navi" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></article>
+
+    <main>
+        <div class="col1st">
+            <div class=""> 
+<pre>
+<div class="sky"><b>Array Methods</b></div><div class="white" id="black"><b class="red">.concat("joins 2 arrays");</b>
+
+const fruit =["apple" ,"banana", "mango", "orange"];
+const vegetables =["carrot","celery","eggplant"];
+
+const fruit_vegetables =fruit<b class="red">.concat</b>(vegetables);
+
+<span class="yellow">console.log(fruit);
+console.log(vegetables);
+console.log(fruit_vegetables);</span>
+<span class="lgreen">
+[ 'apple', 'banana', 'mango', 'orange' ]
+[ 'carrot', 'celery', 'eggplant' ]
+[
+  'apple',    'banana',
+  'mango',    'orange',
+  'carrot',   'celery',
+  'eggplant'
+]</span>
+
+<hr><b class="red">.filter("creates an array with elements from the initial array");</b>
+array method returns a set of original elements based on a condition.
+returns only elements that passed the test provided by a function.
+
+const num = [1,2,3,4,5,6,7,8,9,10]
+const greater_than_4 =num<b class="red">.filter</b>(function(value){
+    return value > 4;
+});
+
+<span class="yellow">console.log(greater_than_4);</span>
+
+<span class="lgreen">[ 5, 6, 7, 8, 9, 10 ]</span>
+
+<hr><b class="red">.some("test element if true or not");</b>
+tests whether or not the array has at least one necessary element.
+
+const has_orange = fruit<b class="red">.some</b>(function(value){
+    return value === "orange";
+});
+
+<span class="yellow">console.log(has_orange);</span>
+
+<span class="lgreen">true</span>
+
+<hr><b class="red">.every("test every element if true or not");</b>
+
+const has_all_orange = fruit<b class="red">.every</b>(function(value){
+    return value === "orange";
+});
+
+<span class="yellow">console.log(has_all_orange);</span>
+
+<span class="lgreen">false</span>
+
+<hr><b class="red">.map("creates a new array trasforming the old one");</b>
+
+const inventors = [
+    {firstname: "thomas", lastname: "edison"},
+    {firstname: "benjamin", lastname: "franklin"},
+    {firstname: "leonardo", lastname: "da vinci"}
+];
+
+const fullname = inventors<b class="red">.map</b>(function(value){
+    return [value.firstname , value.lastname].join(" ");
+});
+
+<span class="yellow">console.log(fullname);</span>
+
+<span class="lgreen">[ 'thomas edison', 'benjamin franklin', 'leonardo da vinci' ]</span>
+
+</pre> </div>                               
+                                     
+            </div> 
+        </div>
+        <div class="col1st">
+            <div>                           
+<pre><hr><div class="sky"><b>Self Study: Find the Necessary Array Method. </b></div><div class="white" id="black"><b class="red">forEach("loops array elements");</b>
+array method that iterates to each and every element of the array 
+to perform an action. works just like the “for” loop.
+
+<b class="red">|| OR </b>= is TRUE, if and only if one or more of its operands is true.
+
+const array = ['Web Developer','Refocus','Web Developer',
+               'Web Developer','Refocus','Awesome'];
+const count = {};
+
+array<b class="red">.forEach</b>(value => {
+    count[value] = (count[value] <b class="red">||</b> 0) + 1;
+});
+
+<span class="yellow">console.log(count);</span>
+<span class="lgreen">{ 'Web Developer': 3, Refocus: 2, Awesome: 1 }</span>
+
+<hr id="grey"> 
+var count2 = {};
+
+array<b class="red">.forEach</b>((value) => {
+  count2 = { ...count2, [value]: (count2[value] || 0) + 1 };
+});
+
+<span class="yellow">console.log(count2);</span>
+<span class="lgreen">{ 'Web Developer': 3, Refocus: 2, Awesome: 1 }</span>
+
+<hr id="grey">
+fruit<b class="red">.forEach</b>(function(value){
+    <span class="yellow">console.log(value);</span>
+    if(value == "banana"){
+    <span class="yellow">console.log("found the 🍌");</span>
+    }
+});
+<span class="lgreen">
+apple   banana 
+found the 🍌
+mango   orange</span>
+
+<hr><b class="red">.reduce("returns a new state of an element");</b>
+can get the previous value and pass it to the next preceding element.
+
+const count3 = array<b class="red">.reduce</b>((accumulator, value) => {
+    return { ...accumulator, [value]: (accumulator[value] || 0) + 1 };
+},
+{}
+);
+
+<span class="yellow">console.log(count3);</span>
+<span class="lgreen">{ 'Web Developer': 3, Refocus: 2, Awesome: 1 }</span>
+
+<hr id="grey">
+const num2 = [2,4,6,8,10];
+
+const sum =num2<b class="red">.reduce</b>(function(previous,current){
+    return previous + current;
+});
+
+<span class="yellow">console.log(sum);</span>
+<span class="lgreen">30</span>
+
+<hr><span class="red">.slice - puts a new word in a new variable or constant. 
+.substring - method extracts the characters straight from the string and 
+            returns the same string with the extracted characters.</span>
+
+const myString1 = "hello world";
+const myString2 = "Hi I am a student at Refocus";
+
+<span class="yellow">console.log(myString1<span class="red">.slice</span>(1,10));
+console.log(myString2<span class="red">.substring</span>(10, 25));
+
+<span class="lgreen">ello worl
+student at Refo</span>
+
+</pre>                       
+            </div> 
+    </main>
+
+    <nav>
+        <div class="box">
+            <div>              
+                <a href="index.html" title="home">
+                    <ul><h2><b>HOME</b></h2>
+            </div> 
+        </div>  
+ 
+    </nav>
+
+    </main>
+
+<script src="js/note07methodsarray.js"></script>
+</body>
+</html>

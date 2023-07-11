@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refocus</title>
+    <script src="https://kit.fontawesome.com/f18e088988.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style notes.css">
+
+</head>
+<body>        
+    <header>
+        <div><a class="navi" href="https://discord.com/" title="discord"><p>Ariz&nbspC.&nbspPiñera</p><p>Refocus | Cohort 23</p></a></div>
+        <div class="title"><h2>Hello Refocus</h2></div>
+        <div><a class="navi" id="none" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></div>  
+    </header>
+    <article class="logo"><figure><img src="asset/img/hello.webp" alt="hello"></figure></article>   
+    <article class="alink"><a class="navi" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></article>
+
+    <main>
+        <div class="col1st">
+            <div class=""> 
+<pre>
+<div class="sky"><b>Methods</b></div><div class="white" id="black"><Span class="red">Methods are properties containing a function definition 
+        that can be performed specific to an object.
+Action that can be called from an object to perform a specific task.</Span>     
+    
+var methods ={
+  log: function(){ 
+    console.log("hello I am a method");
+  },
+  key: function(myName){ 
+    console.log("hello " + myName +" I am a method");
+  },
+  items: [
+    "apple",
+    "banana",
+    "mango"
+  ], 
+  showItems: function(){
+    console.log(this.items);
+  },  
+  showItems2: function(){
+    console.log(this.items[2]);
+    console.log(this.items[0]);
+    console.log(this.items[1]);
+  } 
+}
+
+<div class="yellow" id="black">methods.log();
+methods.key("Aristocles");
+console.log(methods.items);
+methods.showItems();
+methods.showItems2();</div>
+<span class="lgreen">hello I am a method
+hello Aristocles I am a method
+[ 'apple', 'banana', 'mango' ]
+[ 'apple', 'banana', 'mango' ]
+mango
+apple
+banana</span></div> 
+<div class="antique"><b>Recreate Twitter</b></div><div class="white" id="black">var tweet =  "Lorem180 ipsum dolor amet consectetur adipisicing elit.
+        riam facere? Esse porro optio voluptate illum quis, in enim 
+        ratione perspiciatis ea possimus magni iste aperiam rerum lorem!"
+
+<span class="yellow">console.log( `Tweet: ${tweet.length}`);</span>
+
+if (tweet.length <=180) {
+    console.log("Tweeted: " + tweet); 
+    console.log("can tweet ");
+}
+else {    
+    console.log( `limit is 180: you have ${tweet.length}`);
+    console.log("cant tweet ");
+}
+
+<span class="lgreen" id="black">Tweet: 180
+Tweeted: Lorem180 ipsum dolor amet consectetur adipisicing elit. 
+can tweet
+</span>
+<hr>function checkTweet(tweet, limit = 180, ending ="..."){
+    if(tweet.length > limit){
+        return tweet.substring(0, limit - ending.length) + ending;
+    }
+    else{
+        return tweet;
+    }
+ }
+
+ var tweet = checkTweet("Lorem181 ipsum dolor amet consectetur adipisicing elit. 
+        riam facere? Esse porro optio voluptate illum quis, in enim 
+        ratione perspiciatis ea possimus magni iste aperiam rerum lorem!",<span class="red">50</span>);
+
+<span class="yellow">console.log(tweet);</span>
+<span class="lgreen">Lorem181 ipsum dolor amet consectetur adipisic...</span></div>
+ 
+</pre>                                
+                                     
+            </div> 
+        </div>
+        <div class="col1st">
+            <div>                           
+<pre>
+<div class="antique" id=""><b>Banking System</b></div><div class="white" id="black">var bank = {
+  bankName: "Bank Bank", 
+  Address: "Space",
+  bankMoney: 0,
+  Accounts: [
+      {
+          Name: "aristocles",
+          LastName: "messene",
+          Gender: "Male",
+          Address: "Mars",
+          Balance: 0,
+          pin: 123456,
+          userName:"username",
+          password:"password" 
+      },
+      {
+          Name: "aristocles",
+          LastName: "messene",
+          Gender: "Male",
+          Address: "Mars",
+          Balance: 0,
+          pin: 123456,
+          userName:"username",
+          password:"password" 
+      },     
+  ],
+  <span class="orange">checkBankBalance: function(){
+      console.log("the bank balance is: ₱" + this.bankMoney);
+  },
+  depositBankMoney: function(amount){
+      this.bankMoney += amount; //bank.bankMoney = amount +bank.bankMoney 
+      console.log("Deposited: ₱"+ amount);
+  },
+  withdrawBankMoney: function(amount){
+      if(amount <= this.bankMoney && amount >0){
+          this.bankMoney -= amount;
+          console.log("Withdrawn: ₱" +amount );
+      }
+      else{
+          console.log("there is something wrong, Insufficient Bank Money!" );
+      } 
+  }</span>
+}
+
+<span class="yellow" id="black">bank.depositBankMoney(1000);
+bank.depositBankMoney(375); 
+bank.withdrawBankMoney(3000);
+bank.checkBankBalance();</span>
+
+<div class="lgreen" id="black">Deposited: ₱1000
+Deposited: ₱375
+there is something wrong, Insufficient Bank Money!
+the bank balance is: ₱1375</div>
+
+</pre>                       
+            </div> 
+    </main>
+
+    <nav>
+        <div class="box">
+            <div>              
+                <a href="index.html" title="home">
+                    <ul><h2><b>HOME</b></h2>
+            </div> 
+        </div>  
+ 
+    </nav>
+
+    </main>
+
+<script src="js/note06methods.js"></script>
+</body>
+</html>
