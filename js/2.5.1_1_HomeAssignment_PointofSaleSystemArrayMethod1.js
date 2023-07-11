@@ -1,4 +1,5 @@
-const store_inventory = [
+const store_inventory = {
+    items: [
         {
             item: "Shampoo",
             quantity: 1,
@@ -14,9 +15,11 @@ const store_inventory = [
             quantity: 2,
             price_$: 3
         }
-   ]    
+    ]    
+}
 
-const new_deliveries=[
+const new_deliveries= {
+    items: [
         {
             item: "Shampoo",
             quantity: 5,
@@ -36,53 +39,25 @@ const new_deliveries=[
             inventory_index:2 
         }
     ]    
+}
 //console.log(store_inventory);
 //console.log(new_deliveries);
+
 console.log("--------------------------------------");
 let i = 0; 
 do {   
-  console.log(`${store_inventory[i].quantity} + ${new_deliveries[i].quantity}`
-  + " = " + (store_inventory[i].quantity + new_deliveries[i].quantity));
+  console.log(`${store_inventory.items[i].quantity} + ${new_deliveries.items[i].quantity}`
+  + " = " + (store_inventory.items[i].quantity + new_deliveries.items[i].quantity));
   i++;
-} while (i < store_inventory.length);
+} while (i < store_inventory.items.length);
 console.log("--------------------------------------");
 
 function processDeliveries(items_obj){
-    store_inventory[items_obj.inventory_index].quantity += items_obj.quantity;
-    store_inventory[items_obj.inventory_index].price_$ = items_obj.price_$;
+    store_inventory.items[items_obj.inventory_index].quantity += items_obj.quantity;
+    store_inventory.items[items_obj.inventory_index].price_$ = items_obj.price_$;
 }
 
 new_deliveries.forEach(processDeliveries);
 console.log("delivered items have been added to the inventory.");
 console.log("New Inventory Summary:");
 console.log(store_inventory);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
