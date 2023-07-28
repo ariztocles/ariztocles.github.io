@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refocus</title>
+    <script src="https://kit.fontawesome.com/f18e088988.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style notes.css">
+
+</head>
+<body>        
+    <header>
+        <div><a class="navi" href="https://discord.com/" title="discord"><p>Ariz&nbspC.&nbspPiñera</p><p>Refocus | Cohort 23</p></a></div>
+        <div class="title"><h2>Hello Refocus</h2></div>
+        <div><a class="navi" id="none" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></div>  
+    </header>
+    <article class="logo"><figure><img src="asset/img/hello.webp" alt="hello"></figure></article>   
+    <article class="alink"><a class="navi" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></article>
+
+    <main>
+        <div class="col1st">
+            <div class=""> 
+<pre><div class="white" id="black"><p class="sky2"><b>Home Assignment: Point-of-Sale System: String Methods.</p></b><span class="orange">const store_inventory = [
+  {
+      item: "SHAMPOO",
+      quantity: 1,
+      price_$: 3
+  },
+  {
+      item: "SOAP",
+      quantity: 0,
+      price_$: 2
+  }, 
+  {
+      item: "TOOTHPASTE",
+      quantity: 2,
+      price_$: 3
+  }
+]</span>   
+<span class="violet">
+const new_deliveries=[
+  {
+      item: "SHAMPOO",
+      quantity: 5,
+      price_$: 4,
+      inventory_index:0
+  },
+  {
+      item: "SOAP",
+      quantity: 10,
+      price_$: 2,
+      inventory_index:1
+  }, 
+  {
+      item: "TOOTHPASTE",
+      quantity: 10,
+      price_$: 3,
+      inventory_index:2 
+  }
+]</span>    
+
+function <b class="blueviolet">processDeliveries</b>(<b class="yellow">items_obj</b>){<span class="orange">
+  store_inventory[<b class="yellow">items_obj</b>.inventory_index].quantity += <b class="yellow">items_obj</b>.quantity;
+  store_inventory[<b class="yellow">items_obj</b>.inventory_index].price_$ = <b class="yellow">items_obj</b>.price_$;</span>
+}
+new_deliveries<b class="red">.forEach</b>(<b class="blueviolet">processDeliveries</b>);
+
+function <b class="darkmagenta">productSummary</b>(<b class="yellow">items_obj)</b>{
+  const <i class="gold">item_id</i> = <b class="yellow">items_obj</b>.item<b class="red">.slice(0,3).toLowerCase()</b>;
+  var <b class="cornblue">remarks</b> ="good";
+  if (<b class="yellow">items_obj</b>.quantity < 10) {
+    <b class="cornblue">remarks</b> ="low";          
+  }
+  var <i class="green">message</i> = `itemID:${<i class="gold">item_id</i>} | ${<b class="yellow">items_obj</b>.item} | stocks left: ${<b class="yellow">items_obj</b>.quantity} | Remarks: `;
+  return <i class="green">message</i><b class="red">.concat</b>(<b class="cornblue">remarks</b>);
+}
+
+const <b class="green">report_summary</b>  = <b class="orange">store_inventory</b><b class="red">.map</b>(<b class="darkmagenta">productSummary</b>);
+<span class="yellow">console.log(<b class="green">report_summary</b>);</span>
+<span class="lgreen">
+[
+  'itemID:sha | SHAMPOO | stocks left: 6 | Remarks: low',
+  'itemID:soa | SOAP | stocks left: 10 | Remarks: good',
+  'itemID:too | TOOTHPASTE | stocks left: 12 | Remarks: good'
+]</span>
+</pre>                           
+                                     
+            </div> 
+        </div>
+        <div class="col1st">
+            <div>                           
+<pre><div class="white" id="black">const <b class="green">totalProductCost</b>=<b class="orange">store_inventory</b><b class="red">.map</b>(<i class="yellow">inventory</i> => ({
+    product_name: <i class="yellow">inventory</i><b class="orange">.item</b>,
+    totalCost: <i class="yellow">inventory</i><b class="orange">.price_$</b> * <i class="yellow">inventory</i><b class="orange">.quantity</b>
+}));
+<span class="yellow">
+console.log(<b class="green">totalProductCost</b>);</span>
+<b class="lgreen">
+[
+  { product_name: 'SHAMPOO', totalCost: 24 },
+  { product_name: 'SOAP', totalCost: 20 },
+  { product_name: 'TOOTHPASTE', totalCost: 36 }
+]</b>
+
+<div class="white" id="black"><p class="sky2"><b>.map</p></b>const <i class="gold">numbers</i> = [1,2,3,4,5];
+
+function <b class="darkmagenta">Times_Two</b> ( value , index, arr) {
+    return value * 2;
+}
+
+const <b class="orange">new_Numbers</b> = <i class="gold">numbers</i><b class="red">.map</b>(<b class="darkmagenta">Times_Two</b>);
+<b class="yellow">
+console.log(<i class="gold">numbers</i>);
+console.log</b>(<b class="orange">new_Numbers</b>);
+<b class="lgreen">
+[ 1, 2, 3, 4, 5 ]
+[ 2, 4, 6, 8, 10 ]</b>
+</div>   
+</pre>                       
+            </div> 
+    </main>
+
+    <nav>
+        <div class="box">
+            <div>              
+                <a href="index.html" title="home">
+                    <ul><h2><b>HOME</b></h2>
+            </div> 
+        </div>  
+ 
+    </nav>
+
+    </main>
+
+<script src="js/2.5.1_2_HomeAssignment_PointofSaleSystemStringMethod.js"></script>
+</body>
+</html>

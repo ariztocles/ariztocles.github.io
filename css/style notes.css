@@ -17,9 +17,23 @@ li{
     padding-left: 10px;
 }
 
-a:hover {
-    color: blue;
+/* unvisited link
+a:link {
+  color: red;
 }
+
+a:visited {
+    color: gray;
+}*/ 
+  
+a:hover {
+color: hotpink;
+}
+
+/*
+a:active {
+color: blue;
+}*/
 
 input {
     width: 50px;
@@ -43,6 +57,15 @@ input {
 .blue{
     color: blue;
 }
+
+.lblue{
+    color: lightblue;
+}
+
+.cornblue{
+    color: cornflowerblue
+}
+
 .orange{
     color: orange;
 }
@@ -54,6 +77,19 @@ input {
 .blueviolet{
     color: blueviolet;
 }
+
+.darkmagenta{
+    color: darkmagenta;
+}
+
+.gold{
+    color: gold;
+}
+
+.violet{
+    color: violet;
+}
+
 .brown{
     color: brown;
 }

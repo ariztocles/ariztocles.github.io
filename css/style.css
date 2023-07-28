@@ -49,6 +49,24 @@ hr {
     border: 1px solid antiquewhite;
 }
 
+/* unvisited link
+a:link {
+  color: red;
+}*/
+
+a:visited {
+    color: gray;
+} 
+  
+a:hover {
+color: hotpink;
+}
+
+/*
+a:active {
+color: blue;
+}*/
+
 .pgit {
     color: black;
     text-align: center;

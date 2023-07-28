@@ -17,9 +17,23 @@ li{
     padding-left: 10px;
 }
 
-a:hover {
-    color: blue;
+/* unvisited link
+a:link {
+  color: red;
 }
+
+a:visited {
+    color: gray;
+}*/ 
+  
+a:hover {
+color: hotpink;
+}
+
+/*
+a:active {
+color: blue;
+}*/
 
 input {
     width: 50px;
@@ -63,6 +77,10 @@ input {
 
 #tomato110 {
     color: tomato;
+    font-size: 110%;
+}
+#red110 {
+    color: red;
     font-size: 110%;
 }
 

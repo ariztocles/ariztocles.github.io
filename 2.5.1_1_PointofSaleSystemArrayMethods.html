@@ -21,78 +21,76 @@
     <main>
         <div class="col1st">
             <div class=""> 
-<pre><div class="white" id="black"><p class="sky2"><b>Home Assignment: Point-of-Sale System: Array Methods.</p></b><span class="orange">const store_inventory = {
-    items: [
-        {
-            item: "Shampoo",
-            quantity: 1,
-            price_$: 3
-        },
-        {
-            item: "Soap",
-            quantity: 0,
-            price_$: 2
-        },
-        {
-            item: "Toothpaste",
-            quantity: 2,
-            price_$: 3
-        }
-    ]    
-}</span><span class="blueviolet">
-const new_deliveries= {
-    items: [
-        {
-            item: "Shampoo",
-            quantity: 5,
-            price_$: 4,
-            invertory_index:0
-        },
-        {
-            item: "Soap",
-            quantity: 10,
-            price_$: 2,
-            invertory_index:1
-        }, 
-        {
-            item: "Toothpaste",
-            quantity: 10,
-            price_$: 3,
-            invertory_index:2 
-        }
-    ]    
-}</span>
-<span class="yellow">console.log(store_inventory);
-console.log(new_deliveries);
-console.log("--------------------------------------");</span>
-
+<pre><div class="white" id="black"><p class="sky2"><b>Home Assignment: Point-of-Sale System: Array Methods.</p></b><span class="orange">const store_inventory=[
+    {
+        item: "shampoo",
+        quantity: 1,
+        price_$: 3
+    },
+    {
+        item: "soap",
+        quantity: 0,
+        price_$: 2
+    }, 
+    {
+        item: "toothpaste",
+        quantity: 2,
+        price_$: 3
+    }
+]</span>    
+<span class="violet">
+const new_deliveries=[
+    {
+        item: "shampoo",
+        quantity: 5,
+        price_$: 4,
+        inventory_index:0
+    },
+    {
+        item: "soap",
+        quantity: 10,
+        price_$: 2,
+        inventory_index:1
+    }, 
+    {
+        item: "toothpaste",
+        quantity: 10,
+        price_$: 3,
+        inventory_index:2 
+    }
+] </span>     
+  
+<span class="yellow">console.log("--------------------------------------");</span>
 let i = 0; 
 do {   
-    <span class="yellow">console.log</span><span class="orange">(`${store_inventory.items[i].quantity}</span> 
-    <span class="blueviolet">+ ${new_deliveries.items[i].quantity}`</span>    
-    + " = " 
-    <span class="orange">+ (store_inventory.items[i].quantity</span>
-    <span class="blueviolet">+ new_deliveries.items[i].quantity));</span>
+    console.log(`${<b class="orange">store_inventory[i].quantity</b>} + ${<b class="violet">new_deliveries[i].quantity</b>}` + " = " 
+    + (<b class="orange">store_inventory[i].quantity</b> + <b class="violet">new_deliveries[i].quantity</b>));
     i++;
-} while (i < <span class="orange">store_inventory.items.length);</span><span class="yellow">
-console.log("--------------------------------------");</span>
-
-<span class="lgreen">--------------------------------------
+} while (i < <b class="orange">store_inventory</b><b class="yellow">.length</b>);
+<span class="yellow">console.log("--------------------------------------");</span>
+  
+function <b class="blueviolet">processDeliveries</b>(<b class="yellow">items_obj</b>) {
+<span class="orange">store_inventory[<b class="yellow">items_obj</b>.inventory_index].quantity += <b class="yellow">items_obj</b>.quantity;
+store_inventory[<b class="yellow">items_obj</b>.inventory_index].price_$ = <b class="yellow">items_obj</b>.price_$;</span>
+}
+new_deliveries<b class="red">.forEach</b>(<b class="blueviolet">processDeliveries</b>);
+<span class="yellow">
+console.log("delivered items have been added to the inventory.");
+console.log("new inventory summary:");
+console.log(store_inventory);</span>
+<span class="lgreen">
+--------------------------------------
 1 + 5 = 6
 0 + 10 = 10
 2 + 10 = 12
---------------------------------------</span>
-
-
-
-
-</div>
-
-
-
-
-
-
+--------------------------------------
+delivered items have been added to the inventory.
+new inventory summary:
+ [
+   { item: 'shampoo', quantity: 6, 'price_$': 4 },
+   { item: 'soap', quantity: 10, 'price_$': 2 },
+   { item: 'toothpaste', quantity: 12, 'price_$': 3 }
+]</span>
 </div>
 </pre>                           
                                      
@@ -100,9 +98,83 @@ console.log("--------------------------------------");</span>
         </div>
         <div class="col1st">
             <div>                           
-<pre>
+<pre><div class="white" id="black"><span class="orange">const store_inventory = {   
+    customer_name: "Ariztocles",   
+    items: [
+        {
+            item: "SHAMPOO",
+            quantity: 1,
+            price_$: 3
+        },
+        {
+            item: "SOAP",
+            quantity: 0,
+            price_$: 2
+        }, 
+        {
+            item: "TOOTHPASTE",
+            quantity: 2,
+            price_$: 3
+        }
+    ]    
+}</span>
+<span class="violet">const new_deliveries= {
+    customer_name: "Ariztocles", 
+    items: [
+        {
+            item: "SHAMPOO",
+            quantity: 5,
+            price_$: 4,
+            inventory_index:0
+        },
+        {
+            item: "SOAP",
+            quantity: 10,
+            price_$: 2,
+            inventory_index:1
+        }, 
+        {
+            item: "TOOTHPASTE",
+            quantity: 10,
+            price_$: 3,
+            inventory_index:2 
+        }
+    ]
+}</span>
+<span class="yellow">console.log("--------------------------------------");</span>
+let i = 0; 
+do {   
+    console.log(`${<b class="orange">store_inventory.items[i].quantity</b>} + ${<b class="violet">new_deliveries.items[i].quantity</b>}` + " = " 
+    + (<b class="orange">store_inventory.items[i].quantity</b> + <b class="violet">new_deliveries.items[i].quantity</b>));
+    i++;
+} while (i < <b class="orange">store_inventory.items</b><b class="yellow">.length</b>);
+<span class="yellow">console.log("--------------------------------------");</span>
 
-
+function <b class="blueviolet">processDeliveries</b>(<b class="yellow">items_obj</b>){<span class="orange">
+    store_inventory.items[<b class="yellow">items_obj</b>.inventory_index].quantity += <b class="yellow">items_obj</b>.quantity;
+    store_inventory.items[<b class="yellow">items_obj</b>.inventory_index].price_$ = <b class="yellow">items_obj</b>.price_$;
+    }</span>
+new_deliveries<b class="orange">.items</b><b class="red">.forEach</b>(<b class="blueviolet">processDeliveries</b>);
+<span class="yellow">
+console.log("DELIVERED ITEMS HAVE BEEN ADDED TO THE INVENTORY.");
+console.log("NEW INVENTORY SUMMARY:");
+console.log(store_inventory);</span>
+<span class="lgreen">
+--------------------------------------
+1 + 5 = 6
+0 + 10 = 10
+2 + 10 = 12
+--------------------------------------
+DELIVERED ITEMS HAVE BEEN ADDED TO THE INVENTORY.
+NEW INVENTORY SUMMARY:
+{
+  customer_name: 'Ariztocles',
+  items: [
+    { item: 'SHAMPOO', quantity: 6, 'price_$': 4 },
+    { item: 'SOAP', quantity: 10, 'price_$': 2 },
+    { item: 'TOOTHPASTE', quantity: 12, 'price_$': 3 }
+  ]
+}</span></div>   
 </pre>                       
             </div> 
     </main>
