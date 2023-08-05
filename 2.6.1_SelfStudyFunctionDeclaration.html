@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refocus</title>
+    <script src="https://kit.fontawesome.com/f18e088988.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style notes.css">
+
+</head>
+<body>        
+    <header>
+        <div><a class="navi" href="https://discord.com/" title="discord"><p>Ariz&nbspC.&nbspPiñera</p><p>Refocus | Cohort 23</p></a></div>
+        <div class="title"><h2>Hello Refocus</h2></div>
+        <div><a class="navi" id="none" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></div>  
+    </header>
+    <article class="logo"><figure><img src="asset/img/hello.webp" alt="hello"></figure></article>   
+    <article class="alink"><a class="navi" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></article>
+
+    <main>
+        <div class="col1st">
+            <div class=""> 
+
+
+
+
+<pre><div class="white" id="black"><p class="sky2"><b>Function Declaration</p></b>
+<b class="red">function declaration</b>
+function <i class="gold">greeting</i>(<b class="cornblue">message</b>){
+    <b class="yellow">console.log</b>(<b class="cornblue">message</b>);
+}
+<i class="gold">greeting</i>("jello world");
+<b class="lgreen">
+jello world</b>
+
+<hr>
+<b class="red">function expression</b>
+const <i class="gold">greeting2</i>  = function (<b class="cornblue">message</b>){
+    <b class="yellow">console.log</b>(<b class="cornblue">message</b>);
+}
+<i class="gold">greeting2</i>("jello world !!");
+<b class="lgreen">
+jello world !!</b>
+
+----------------------------------------------------------
+
+const <i class="gold">greeting3</i>  = function (<b class="cornblue">message</b>){
+    return <b class="cornblue">message</b>;
+}
+<b class="yellow">console.log</b>("!!! " + <i class="gold">greeting3</i> ("mellow world"));
+<b class="lgreen">
+!!! mellow world</b>
+
+<hr>
+<b class="red">arrow function</b>
+const <i class="gold">greeting4</i>  = (<b class="cornblue">message</b>) => <b class="cornblue">message</b>;
+
+<b class="yellow">console.log</b>("!V " + <i class="gold">greeting4</i> ("hello refocus"));
+<b class="lgreen">
+!V hello refocus</b>
+
+<div class="white" id="black"><p class="sky2"><b>Self Study: Function Declaration</p></b><span class="orange">const store_inventory = [
+    {
+        item: "SHAMPOO",
+        quantity: 1,
+        price_$: 3
+    },
+    {
+        item: "SOAP",
+        quantity: 0,
+        price_$: 2
+    }, 
+    {
+        item: "TOOTHPASTE",
+        quantity: 2,
+        price_$: 3
+    }
+    ]</span>   
+    <span class="violet">
+    const new_deliveries=[
+    {
+        item: "SHAMPOO",
+        quantity: 5,
+        price_$: 4,
+        inventory_index:0
+    },
+    {
+        item: "SOAP",
+        quantity: 10,
+        price_$: 2,
+        inventory_index:1
+    }, 
+    {
+        item: "TOOTHPASTE",
+        quantity: 10,
+        price_$: 3,
+        inventory_index:2 
+    }
+]</span></div>     
+</div>   
+</pre>  
+
+
+
+
+
+
+
+
+
+
+
+                      
+            </div> 
+        </div>
+        <div class="col1st">
+            <div>  
+                
+                
+
+
+
+
+
+
+
+
+
+<pre><div class="white" id="black"><span class="grey">function processDeliveries(items_obj){
+    store_inventory[items_obj.inventory_index].quantity += items_obj.quantity;
+    store_inventory[items_obj.inventory_index].price_$ = items_obj.price_$;
+}</span>
+
+const <b class="blueviolet">processDeliveries</b> = function(<b class="yellow">items_obj</b>){<span class="orange">
+    store_inventory[<b class="yellow">items_obj</b>.inventory_index].quantity += <b class="yellow">items_obj</b>.quantity;
+    store_inventory[<b class="yellow">items_obj</b>.inventory_index].price_$ = <b class="yellow">items_obj</b>.price_$;</span>
+}
+new_deliveries<b class="red">.forEach</b>(<b class="blueviolet">processDeliveries</b>);
+<span class="lgreen">
+[
+    { item: 'shampoo', quantity: 6, 'price_$': 4 },
+    { item: 'soap', quantity: 10, 'price_$': 2 },
+    { item: 'toothpaste', quantity: 12, 'price_$': 3 }
+]</span>
+<span class="grey">
+function productSummary(items_obj){
+    const item_id = items_obj.item.slice(0,3).toLowerCase();
+    var remarks="good";
+    if (items_obj.quantity < 10) {
+        remarks="low";          
+    }
+    var message = `itemID:${item_id} | ${items_obj.item} | stocks left: ${items_obj.quantity} | Remarks: `;
+    return message.concat(remarks);
+}</span>
+
+const <b class="darkmagenta">productSummary</b> = (<b class="yellow">items_obj)</b> => {
+    const <i class="gold">item_id</i> = <b class="yellow">items_obj</b>.item<b class="red">.slice(0,3).toLowerCase()</b>;
+    var <b class="cornblue">remarks</b> ="good";
+    if (<b class="yellow">items_obj</b>.quantity < 10) {
+        <b class="cornblue">remarks</b> ="low";          
+    }
+    var <i class="green"><b class="cornblue">message</b></i> = `itemID:${<i class="gold">item_id</i>} | ${<b class="yellow">items_obj</b>.item} | stocks left: ${<b class="yellow">items_obj</b>.quantity} | Remarks: `;
+    return <i class="green"><b class="cornblue">message</b></i><b class="red">.concat</b>(<b class="cornblue">remarks</b>);
+}
+const <b class="green">report_summary</b>  = <b class="orange">store_inventory</b><b class="red">.map</b>(<b class="darkmagenta">productSummary</b>);
+<span class="yellow">console.log(<b class="green">report_summary</b>);</span>
+<span class="lgreen">
+[
+    'ItemID:sha | shampoo | STOCKS LEFT: 6 | REMARKS: LOW',
+    'ItemID:soa | soap | STOCKS LEFT: 10 | REMARKS: GOOD',
+    'ItemID:too | toothpaste | STOCKS LEFT: 12 | REMARKS: GOOD'
+]</span>
+</pre> 
+
+
+
+
+
+
+
+
+
+
+            </div> 
+    </main>
+
+    <nav>
+        <div class="box">
+            <div>              
+                <a href="index.html" title="home">
+                    <ul><h2><b>HOME</b></h2>
+            </div> 
+        </div>  
+ 
+    </nav>
+
+    </main>
+
+<script src="js/2.6.1_SelfStudy_FunctionDeclaration.js"></script>
+</body>
+</html>
