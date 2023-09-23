@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refocus</title>
+    <script src="https://kit.fontawesome.com/f18e088988.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style notes long.css">
+
+</head>
+<body>        
+    <header>
+        <div><a class="navi" href="https://discord.com/" title="discord"><p>Ariz&nbspC.&nbspPiñera</p><p>Refocus | Cohort 23</p></a></div>
+        <div class="title"><h2>Hello Refocus</h2></div>
+        <div><a class="navi" id="none" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></div>  
+    </header>
+    <article class="logo"><figure><img src="asset/img/hello.webp" alt="hello"></figure></article>   
+    <article class="alink"><a class="navi" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></article>
+
+    <main>
+        <div class="col1st">
+            <div class=""> 
+<pre><div class="white" id="black"><h3 class="sky2"><b>Banking System: Array Method</b></h3>var isLoggedIn = false;
+var userID =null;
+
+var bank = {
+    bankName: "Bank Bank", 
+    Address: "Space",
+    bankMoney: 0,
+    Accounts: [
+        {
+            Name: "aristocles",
+            LastName: "messene",
+            Gender: "Male",
+            Address: "Mars",
+            Balance: 0,
+            pin: 123456,
+            userName:"username",
+            password:"password" 
+        },
+        {
+            Name: "tony",
+            LastName: "stark",
+            Gender: "Male",
+            Address: "new york",
+            Balance: 0,
+            pin: 654321,
+            userName:"ironman",
+            password:"ironman69" 
+        },    
+        {
+            Name: "bruce",
+            LastName: "banner",
+            Gender: "Male",
+            Address: "new york",
+            Balance: 0,
+            pin: 111111,
+            userName:"hulk",
+            password:"hulk143" 
+        }  
+    ],
+    checkBankBalance: function(){
+        console.log("the bank balance is: ₱" + this.bankMoney);
+    },
+    depositBankMoney: function(amount){
+        this.bankMoney += amount; //bank.bankMoney = amount +bank.bankMoney 
+        console.log("Deposited: ₱"+ amount);
+    },
+    withdrawBankMoney: function(amount){
+        if(amount <= this.bankMoney && amount > 0){
+            this.bankMoney -= amount;
+            console.log("deducted ₱" + amount.toFixed(2) + " To The Vault!" );
+        }
+        else{
+            console.log("there is something wrong, Insufficient Bank Money!" );
+        } 
+    }  
+} 
+
+<hr>
+
+function loginUser(username,password ){     
+    bank.Accounts.forEach((element, index) => {
+        //console.log(index); // 0 1
+        if(element.userName == username && element.password == password){
+            isLoggedIn = true;
+            userID = index;
+            console.log("hi " + element.Name+ " " + element.LastName);
+        }
+        //else{"forEach will return true is one value is true"}
+    });
+
+    if(!isLoggedIn){
+        userID = null;
+        console.log("invalid credentials");
+    }
+}
+
+function showError(msg){
+    console.error(msg);
+}
+
+function depositMoney(amount){
+    if(isLoggedIn){
+        bank.Accounts[userID]. Balance += amount;
+        bank.depositBankMoney(amount);
+        console.log("Adds ₱" + amount.toFixed(2) + " to the vault")
+    }
+    else{
+        showError("please log in!")
+    }
+}
+
+function checkBalance(){
+    if(isLoggedIn){
+        console.log("your account balance is ₱" + bank.Accounts[userID].Balance.toFixed(2)+ ".")
+    }
+    else{
+        showError("please log in!")
+    }
+}
+
+function withdrawMoney(amount){
+    if(isLoggedIn){
+        if(bank.Accounts[userID].Balance >= amount && amount > 0){
+            bank.Accounts[userID].Balance -= amount;
+            bank.withdrawBankMoney(amount);
+            console.log("you withdraw ₱" + amount.toFixed(2) + "to to your account.");
+        }
+        else{
+            showError("some thing went wrong 1");
+        }
+    }
+    else{
+        showError("some thing went wrong 2");
+    }
+}
+
+
+
+
+
+
+
+
+
+<hr>
+
+loginUser("username", "password");
+depositMoney(500);
+depositMoney(800);
+withdrawMoney(250);
+checkBalance();
+console.log("----------------------------------");
+console.log("");
+<span class="lgreen">
+        hi aristocles messene
+        Deposited: ₱500
+        Adds ₱500.00 to the vault
+        Deposited: ₱800
+        Adds ₱800.00 to the vault
+        deducted ₱250.00 To The Vault!
+        you withdraw ₱250.00to to your account.
+        your account balance is ₱1050.00.
+        ----------------------------------</span>
+
+
+loginUser("ironman", "ironman69");
+depositMoney(350000);
+depositMoney(350000);
+checkBalance();
+console.log("----------------------------------");
+bank.checkBankBalance();
+console.log("");
+<span class="lgreen">
+        hi tony stark
+        Deposited: ₱350000
+        Adds ₱350000.00 to the vault
+        Deposited: ₱350000
+        Adds ₱350000.00 to the vault
+        your account balance is ₱700000.00.
+        ----------------------------------
+        the bank balance is: ₱701050</span>
+
+<hr>
+
+
+
+
+function addUser(info){
+    bank.Accounts.push(info);
+    console.log("=> ... "+ info.Name +" " + info.LastName + " has been added");
+}
+
+addUser(
+    {
+        Name: "jason",
+        LastName: "beggar",
+        Gender: "Male",
+        Address: "poorvile",
+        Balance: 0,
+        pin: 555000,
+        userName:"123",
+        password:"123" 
+    }  
+);
+
+function removeUser(id){
+    isLoggedIn = false;    
+    console.log(bank.Accounts[id].Name + " " +  bank.Accounts[userID].LastName + " has been removed ");
+    userID = null;
+    bank.Accounts.splice(id, 1);
+}
+
+<HR>
+
+loginUser("123", "123");
+depositMoney(70);
+withdrawMoney(20);
+console.log("----------------------------------");
+    <span class="lgreen">
+        => ... jason beggar has been added
+        hi jason beggar
+        Deposited: ₱70
+        Adds ₱70.00 to the vault
+        deducted ₱20.00 To The Vault!
+        you withdraw ₱20.00to to your account.
+        ----------------------------------</span>
+
+removeUser(2);
+
+loginUser("hulk", "hulk143");
+        <span class="lgreen">
+        bruce beggar has been removed 
+        invalid credentials</span>
+
+</pre>                           
+                                     
+            </div> 
+        </div>
+        <div class="col1st">
+            <div>                           
+<pre><div class="grey" id="black"><h3 class="sky2"><b>Banking System: Closure Callbacks</b></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><div class="white" id="black">
+<hr>
+<b class="red">function accountControl()</b>{
+    function loginUser(username,password ){        
+        bank.Accounts.forEach((element, index) => {
+            //console.log(index); // 0 1
+            if(element.userName == username && element.password == password){
+                isLoggedIn = true;
+                userID = index;
+                console.log("hi " + element.Name+ " " + element.LastName);
+            }
+            //else{"forEach will return true is one value is true"}
+        });
+
+        if(!isLoggedIn){
+            userID = null;
+            console.log("invalid credentials");
+        }
+    }
+
+    function showError(msg){
+        console.error(msg);
+    }
+
+    function depositMoney(amount){
+        if(isLoggedIn){
+            bank.Accounts[userID]. Balance += amount;
+            bank.depositBankMoney(amount);
+            console.log("Adds ₱" + amount.toFixed(2) + " to the vault")
+        }
+        else{
+            showError("please log in!")
+        }
+    }
+
+    function checkBalance(){
+        if(isLoggedIn){
+            console.log("your account balance is ₱" + bank.Accounts[userID].Balance.toFixed(2)+ ".")
+        }
+        else{
+            showError("please log in!")
+        }
+    }
+
+    function withdrawMoney(amount){
+        if(isLoggedIn){
+            if(bank.Accounts[userID].Balance >= amount && amount > 0){
+                bank.Accounts[userID].Balance -= amount;
+                bank.withdrawBankMoney(amount);
+                console.log("you withdraw ₱" + amount.toFixed(2) + "to to your account.");
+            }
+            else{
+                showError("some thing went wrong 1");
+            }
+        }
+        else{
+            showError("some thing went wrong 2");
+        }
+    }<b class="red">
+    return {
+        showError,
+        withdrawMoney,
+        checkBalance,
+        depositMoney,
+        loginUser         
+    }</b>
+}
+
+<hr><b class="red">
+var aristocles = accountControl();</b>
+aristocles.loginUser("username", "password");
+aristocles.depositMoney(500);
+aristocles.depositMoney(800);
+aristocles.withdrawMoney(250);
+aristocles.checkBalance();
+console.log("----------------------------------");
+console.log("");
+    <span class="lgreen">
+        hi aristocles messene
+        Deposited: ₱500
+        Adds ₱500.00 to the vault
+        Deposited: ₱800
+        Adds ₱800.00 to the vault
+        deducted ₱250.00 To The Vault!
+        you withdraw ₱250.00to to your account.
+        your account balance is ₱1050.00.
+        ----------------------------------</span>
+        <b class="red"> 
+var tony = accountControl();</b>
+tony.loginUser("ironman", "ironman69");
+tony.depositMoney(350000);
+tony.depositMoney(350000);
+tony.checkBalance();
+console.log("----------------------------------");
+bank.checkBankBalance();
+console.log("");
+    <span class="lgreen">
+        hi tony stark
+        Deposited: ₱350000
+        Adds ₱350000.00 to the vault
+        Deposited: ₱350000
+        Adds ₱350000.00 to the vault
+        your account balance is ₱700000.00.
+        ----------------------------------
+        the bank balance is: ₱701050</span>
+
+<hr><b class="red">
+function bankControl(callback, data){
+callback(data);
+}</b>
+
+function addUser(info){
+    bank.Accounts.push(info);
+    console.log("=> ... "+ info.Name +" " + info.LastName + " has been added");
+}
+<b class="red">
+bankControl(addUser,
+    {
+        Name: "jason",
+        LastName: "beggar",
+        Gender: "Male",
+        Address: "poorvile",
+        Balance: 0,
+        pin: 555000,
+        userName:"123",
+        password:"123" 
+    }
+);</b>
+
+function removeUser(id){
+    isLoggedIn = false;    
+    console.log(bank.Accounts[id].Name + " " +  bank.Accounts[userID].LastName + " has been removed ");
+    userID = null;
+    bank.Accounts.splice(id, 1);
+}
+
+<HR><b class="red">
+var jason = accountControl();</b>
+jason.loginUser("123", "123");
+jason.depositMoney(70);
+jason.withdrawMoney(20);
+console.log("----------------------------------");
+    <span class="lgreen">
+        => ... jason beggar has been added
+        hi jason beggar
+        Deposited: ₱70
+        Adds ₱70.00 to the vault
+        deducted ₱20.00 To The Vault!
+        you withdraw ₱20.00to to your account.
+        ----------------------------------</span>
+        <b class="red">
+bankControl(removeUser, 2);
+var bruce = accountControl();</b>
+bruce.loginUser("hulk", "hulk143");
+    <span class="lgreen">
+        bruce beggar has been removed 
+        invalid credentials</span>
+
+</div>   
+</pre>                       
+            </div> 
+    </main>
+
+    <nav>
+        <div class="box">
+            <div>              
+                <a href="index.html" title="home">
+                    <ul><h2><b>HOME</b></h2>
+            </div> 
+        </div>  
+ 
+    </nav>
+
+    </main>
+
+<script src="js/2.5.1_2_HomeAssignment_PointofSaleSystemStringMethod.js"></script>
+</body>
+</html>

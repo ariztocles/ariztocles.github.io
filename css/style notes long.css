@@ -144,7 +144,7 @@ body {
     'nav nav'
     'content content';                        
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 1fr 1500px;
+    grid-template-rows: 200px 1fr 1fr; /* 1500px */
     }   
 
 .logo{  
@@ -216,7 +216,7 @@ nav {
     background-color: antiquewhite;
 }
 
-.box, .boxempty, .box1, .col ,.col1st, .colblack{    
+.box, .boxempty, .box1, .col ,.col1st{    
     flex: 1;
     /* width: 100%; */
     border-radius: 10px;
@@ -225,10 +225,6 @@ nav {
     margin: 10px;
     background-color: white;
     height: minmax(150px, auto);
-}
-
-.colblack{  
-    background-color:black;
 }
 
 .boxempty {    
@@ -266,11 +262,11 @@ nav {
 /* 
 @media (max-width: 768px) {
 */
-
+/*
 @media (max-width: 960px) {
     body {
-        /* grid-template-rows: 100px; */
-        /* grid-auto-rows: minmax(50px, auto);*/
+        // grid-template-rows: 100px; 
+        // grid-auto-rows: minmax(50px, auto);
         display: grid;
         grid-template-areas:
             'header header'
@@ -311,10 +307,10 @@ nav {
     main {
         grid-area: content;
         flex-direction: column;  
-        /* margin: 0 auto; */
+        // margin: 0 auto;
         align-items: center;      
     }
-    .col,.col1st, .colblack{
+    .col,.col1st{
         width: 480px       
     }
 } 

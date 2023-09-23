@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refocus</title>
+    <script src="https://kit.fontawesome.com/f18e088988.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style notes.css">
+
+</head>
+<body>        
+    <header>
+        <div><a class="navi" href="https://discord.com/" title="discord"><p>Ariz&nbspC.&nbspPiñera</p><p>Refocus | Cohort 23</p></a></div>
+        <div class="title"><h2>Hello Refocus</h2></div>
+        <div><a class="navi" id="none" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></div>  
+    </header>
+    <article class="logo"><figure><img src="asset/img/hello.webp" alt="hello"></figure></article>   
+    <article class="alink"><a class="navi" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></article>
+
+    <main>
+        <div class="col1st">
+            <div class=""> 
+<pre><div class="white" id="black"><h2 class="sky2"><b>Combine Functions using callbacks</b></h2> 
+<h3 class="red"><b class="red">callback</b> (function passed as an arguement);</h3>
+    function <b class="green">showmessage2</b> (<b class="red">callback2</b> ,data = {}){
+        var result = <b class="red">callback2</b> (data);
+        <b class="yellow">console.log</b> (result / 10);
+    }
+    
+    function <b class="gold">ADD</b> ({<i class="tomato">num1</i>  ,<i class="orange">num2</i> }){
+        return <i class="tomato">num1</i> + <i class="orange">num2</i> ;
+    }
+    
+    function <b class="blueviolet">MINUS</b> ({<i class="tomato">num1</i>  ,<i class="orange">num2</i> }){
+        return <i class="tomato">num1</i> - <i class="orange">num2</i> ;
+    }
+    
+    <b class="green">showmessage2</b> (<b class="gold">ADD</b> , {
+        <i class="tomato">num1</i> : 5,
+        <i class="orange">num2</i> : 10,
+        message:"Hello"
+    });
+    
+    <b class="green">showmessage2</b> (<b class="blueviolet">MINUS</b> , {
+        <i class="tomato">num1</i> : 10,
+        <i class="orange">num2</i> : 2,  
+    });
+<span class="lgreen">
+    1.5
+    0.8</span> 
+
+<hr>
+    function <b class="green">showmessage</b> (<b class="red">callback</b> ,name,yearborn){
+        <b class="yellow">console.log</b> (`hi ${name}`);
+        <b class="red">callback</b> (yearborn);    
+    }
+    
+    function <b class="red">callback</b> fn(yr){
+        const age = new Date().getFullYear()-yr;
+        <b class="yellow">console.log</b> (`your age is ${age}`);
+    }
+    
+    <b class="green">showmessage</b> (<b class="red">callback</b> fn,"ariztocles",1981);
+<span class="lgreen">
+    hi ariztocles
+    your age is 42</span>     
+</div> 
+</pre>
+
+<!--
+<b class="yellow">console.log</b> 
+<b class="gold">ADD</b> 
+<b class="blueviolet">MINUS</b>
+<i class="tomato">num1</i> 
+<i class="orange">num2</i> 
+<b class="red">callback</b> 
+<span class="lgreen"></span>
+<b class="green">showmessage</b> 
+ -->
+                                     
+            </div> 
+        </div>
+        <div class=""> 
+            <!-- <div class="col1st"> -->
+            <div>                           
+<pre><div>
+</div>
+
+
+
+
+</pre>                       
+            </div> 
+    </main>
+
+    <nav>
+        <div class="box">
+            <div>              
+                <a href="index.html" title="home">
+                    <ul><h2><b>HOME</b></h2>
+            </div> 
+        </div>  
+ 
+    </nav>
+
+    </main>
+
+<script src="js/2.6.4_callback.js"></script>
+</body>
+</html>

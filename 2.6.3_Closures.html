@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta <b class="orange">name</b>="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refocus</title>
+    <script src="https://kit.fontawesome.com/f18e088988.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style notes.css">
+
+</head>
+<body>        
+    <header>
+        <div><a class="navi" href="https://discord.com/" title="discord"><p>Ariz&nbspC.&nbspPiñera</p><p>Refocus | Cohort 23</p></a></div>
+        <div class="title"><h2>Hello Refocus</h2></div>
+        <div><a class="navi" id="none" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></div>  
+    </header>
+    <article class="logo"><figure><img src="asset/img/hello.webp" alt="hello"></figure></article>   
+    <article class="alink"><a class="navi" href="https://ariztocles.github.io/" title="ariztocles.github.io"><p>ariztocles.github.io</p></a></article>
+
+    <main>
+        <div class="col1st">
+            <div class=""> 
+<pre><div class="white" id="black"><h2 class="sky2"><b>Combine Functions using Closures</b></h2>
+    function <i class="gold">bank</i>(<b class="orange">name</b>){
+        let <b class="tomato">balance</b> = 0;
+
+        <b class="yellow">console.log</b>(<b class="orange">name</b>);
+
+        function <b class="green">deposit</b>(<b class="blueviolet">amount</b>){
+            <b class="tomato">balance</b> += <b class="blueviolet">amount</b>;
+
+            <b class="yellow">console.log</b>( "ADD MONEY " + <b class="blueviolet">amount</b>);
+        }
+
+        function <b class="tomato">check<b class="tomato">balance</b></b>(){
+            <b class="yellow">console.log</b>("<b class="tomato">balance</b> is " + <b class="tomato">balance</b>);        
+        }
+    <div class="white" id="grey">/*
+        return { <span class="blue">// return method</span>
+            dep: <b class="green">deposit</b>,
+            check: <b class="tomato">check<b class="tomato">balance</b></b>
+        }; 
+*/</div>
+        return { <span class="blue">/ return method</span>/
+            <b class="green">deposit</b>, // <b class="green">deposit</b>: <b class="green">deposit</b>
+            <b class="tomato">check<b class="tomato">balance</b></b> // <b class="tomato">check<b class="tomato">balance</b></b>: function(){}
+        };  
+
+    }
+    <div class="white" id="grey">/*
+    <i class="gold">bank</i>("ariztocles").dep(500);
+    <i class="gold">bank</i>("ariztocles").check();
+    <span class="lgreen">
+    ariztocles
+    ADD MONEY 500
+    ariztocles
+    balance is 0</span>
+*/</div>
+    var bnk = <i class="gold">bank</i>("ARIZTOCLES !");
+
+    bnk.<b class="green">deposit</b>(500);
+    bnk.<b class="green">deposit</b>(800);
+    bnk.<b class="tomato">check<b class="tomato">balance</b></b>();
+    <span class="lgreen">
+    ARIZTOCLES !
+    ADD MONEY 500
+    ADD MONEY 800
+    balance is 1300</span>
+</div>
+</pre>                           
+                                     
+            </div> 
+        </div>
+        <div class=""> 
+            <!-- <div class="col1st"> -->
+            <div>                           
+<pre><div>
+</div>
+
+
+
+
+</pre>                       
+            </div> 
+    </main>
+
+    <nav>
+        <div class="box">
+            <div>              
+                <a href="index.html" title="home">
+                    <ul><h2><b>HOME</b></h2>
+            </div> 
+        </div>  
+ 
+    </nav>
+
+    </main>
+
+<script src="js/2.6.3_Closures.js"></script>
+</body>
+</html>
